@@ -1,0 +1,140 @@
+/*
+
+Template name: Me
+Author: Magna Themes
+Support: http://www.magna-themes.com/support
+
+*/
+
+
+/*  1. GENERAL COLORS AND FONTS
+================================================*/
+body {
+     font-family: 'Droid Sans', "Trebuchet Ms", verdana; /* Default font family for the entire document */
+     font-size: 13px; /* Default font size for the entire document */
+     color: #666; /* Default colors for the fonts */
+     background: #F8F8F8; /* Background color */
+}
+
+/* Links */
+a, .link {
+     color: #990000; /* Default color for the links */
+}
+/* Selection */
+::selection, ::-moz-selection{
+     background: #272727;
+     color: #FFF;
+}
+/* Links */
+h1, h2,  h3, h4, h5, h6, h1 a, h2 a,  h3 a, h4 a, h5 a, h6 a {
+     color: #333;
+     font-family: 'Vollkorn', serif;
+     font-weight: normal;
+}
+
+/* Color for the big titles e.g.: OUR WORK */
+div.title h2 {
+     color: #232323;
+     font-family: 'Brawler', serif;
+}
+/* Background color of the big titles. Should be same as the body */
+div.title h2 span { background: #F8F8F8; }
+
+
+
+/*  2. NAVIGATION
+================================================*/
+ul.menu {
+     border-top: 1px solid #CCC; /* The color of the line above the menu items */
+     border-bottom: 1px solid #CCC; /* The color of the line below the menu items */
+}
+/* Below you can set the font family and font size of the menu items */
+ul.menu li {
+     font-size: 16px;
+     font-family: 'Brawler', serif;
+}
+
+/* Colors of the menu items */
+ul.menu li a { color: #272727; }
+ul.menu li a:hover { color: #666; }
+
+/* Styles addressed to the second menu */
+div#hidden_menu { background: #272727; }
+div#hidden_items ul li { font-family: 'Brawler', serif; } /* Replaced by cufon */
+div#hidden_items ul li a { color: #F8F8F8; }
+
+
+
+/*  3. INTRO ( The text below the navigation )
+================================================*/
+#intro { 
+     font-family: 'Vollkorn', serif;
+     color: #414141; 
+}
+
+
+
+/*  4. PORTFOLIO
+================================================*/
+
+/* Below you can change the style of the filter links */
+ul#portfolioFilter li a {
+     font-family: 'Vollkorn', serif;
+     font-size: 14px;
+     text-transform: uppercase;
+     color: #333;
+}
+/* The color of the active portfolio filter link */
+ul#portfolioFilter li.active a { color: #999; }
+
+
+
+/*  5. SERVICES
+================================================*/
+
+/* Border and background colors of the "big circles" */
+.icon_container { border: 1px solid #272727; }
+.icon { background: #272727; }
+
+/* The text, under the service title */
+.services_intro p {
+     color: #414141;
+     font-family: 'Vollkorn', serif;
+}
+
+/* Read more link */
+.service a.read_more {
+      font-size: 11px; 
+      font-weight: bold;  
+      color: #666;
+}
+
+
+
+/*  6. ABOUT
+================================================*/
+#about p {
+     font-size: 17px; 
+     color: #414141; 
+     font-family: 'Vollkorn', serif;
+}
+
+
+/*  7. CONTACT
+================================================*/
+#contact_form input[type="text"], #contact_form textarea {
+     font-size: 15px;
+     font-family: 'Vollkorn', serif;
+     color: #333;
+     border-bottom: 1px dashed #CCC;
+}
+
+#contact_form button { 
+     background: #272727; 
+     font-family: 'Droid Sans', arial, verdana; 
+     font-size: 17px; 
+     color: #FFF; 
+}
+
+#contact_info p { font-family: 'Vollkorn', serif; }
+#contact_info ul { font-family: 'Vollkorn', serif; }

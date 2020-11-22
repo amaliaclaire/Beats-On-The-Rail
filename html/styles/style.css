@@ -1,0 +1,594 @@
+/*
+
+Template name: Me
+Version: 2.0
+Author: Magna Themes
+Support: http://www.magna-themes.com/support
+
+Table of contents:
+------------------
+
+     1. RESET CSS
+     2. SKELETON
+     3. TYPOGRAPGHY
+     4. HEADER
+     5. SLIDER
+     6. PORTFOLIO
+     7. SERVICES
+     8. ABOUT
+     9. CONTACT
+     10. SMARTPHONES & TABLETS
+
+
+*/
+
+
+/*=====================================================================================*/
+/*       1. RESET CSS                                                                  */
+/*=====================================================================================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body { padding-top: 19px; font-weight: normal; line-height: 23px; }
+a { cursor: pointer; text-decoration: none; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+:focus { outline: 0; }
+ins    { text-decoration: none; }
+del    { text-decoration: line-through; }
+table  { border-collapse: collapse; border-spacing: 0; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+.clear   { clear: both; }
+
+/*=====================================================================================*/
+/*       2. SKELETON                                                                   */
+/*=====================================================================================*/
+
+/*--- 1. General container ---*/
+#wrapper { width: 960px; margin: 0px auto; overflow-x: hidden; -ms-overflow-x: hidden; }
+#features { margin-bottom: 100px; }
+#contact { margin-bottom: 100px; }
+
+/*--- 2. Grid system ---*/
+.full                             { width: 100%; }
+.one_half, .one_half_last         { width: 46%; margin-right: 8%; }
+.one_third, .one_third_last       { width: 30%; margin-right: 5%; }
+.two_third, .two_third_last       { width: 65%; margin-right: 5%; }
+.one_fourth, .one_fourth_last     { width: 22%; margin-right: 4%; }
+.two_fourth, .two_fourth_last     { width: 48%; margin-right: 4%; }
+.three_fourth, .three_fourth_last { width: 74%; margin-right: 4%; }
+.one_fifth, .one_fifth_last       { width: 16%; margin-right: 4%; }
+.two_fifth, .two_fifth_last       { width: 36%; margin-right: 4%; }
+.three_fifth, .three_fifth_last   { width: 56%; margin-right: 4%; }
+.four_fifth, .four_fifth_last     { width: 76%; margin-right: 4%; }
+
+.one_half, .one_third, .two_third, .one_fourth, .two_fourth, .three_fourth, .one_fifth, .two_fifth, .three_fifth,
+.four_fifth, .one_sixth, .two_sixth, .three_sixth, .four_sixth, .five_sixth,
+.one_half_last, .one_third_last, .two_third_last, .one_fourth_last,  .two_fourth_last, .three_fourth_last,
+.one_fifth_last, .two_fifth_last, .three_fifth_last, .four_fifth_last
+{ float: left; margin-bottom: 60px; }
+
+.full { margin-bottom: 60px; }
+
+.one_half_last, .one_third_last, .two_third_last, .one_fourth_last,  .two_fourth_last, .three_fourth_last,
+.one_fifth_last, .two_fifth_last, .three_fifth_last, .four_fifth_last
+{ margin-right: 0%; }
+
+
+/*=====================================================================================*/
+/*       3. TYPOGRAPGHY                                                                */
+/*=====================================================================================*/
+
+/*--- 1. General ---*/
+a img { border: 0px; }
+#loading { width: 100%; height: 300px; display: block; background: url('images/loader.gif') center center no-repeat; }
+
+
+/*--- 2. Headings ---*/
+h1 { font-size: 35px; margin-bottom: 24px; }
+h2 { font-size: 30px; margin-bottom: 20px; }
+h3 { font-size: 20px; margin-bottom: 16px; }
+h4 { font-size: 18px; margin-bottom: 14px; }
+h5 { font-size: 16px; margin-bottom: 12px; }
+h6 { font-size: 14px; margin-bottom: 10px; }
+
+/*--- 3. Section titles ---*/
+div.title { margin: 0 auto; padding-top: 80px; margin-bottom: 87px; border-bottom: 1px solid #CCC; }
+div.title h2 { font-size: 28px; margin-bottom: -14px; text-align: center; text-transform: uppercase; }
+div.title h2 span { padding: 0px 30px; }
+
+/*--- 4. SlideTo buttons ---*/
+a.scroll_down { display: block; width: 46px; height: 46px; margin: 0 auto; margin-bottom: 600px; background: url('images/down.png') no-repeat; }
+a.scroll_top { display: block; width: 46px; height: 46px; margin: 0 auto; margin-bottom: 300px; background: url('images/up.png')no-repeat; }
+
+/*--- 5. Images ---*/
+.full img,
+.one_half img, .one_half_last img, .one_third img, .one_third_last img, .two_third img, .two_third_last img,
+.one_fourth img, .one_fourth_last img, .two_fourth img, .two_fourth_last img, .three_fourth img, .three_fourth_lastimg,
+.one_fifth img, .one_fifth_last img, .two_fifth img, .two_fifth_last img, .three_fifth img, .three_fifth_last img,
+.four_fifth img, .four_fifth_last img, .one_sixth img, .one_sixth_last img, .two_sixth img, .two_sixth_last img,
+.three_sixth img, .three_sixth_last img, .four_sixth img, .four_sixth_last img,
+.five_sixth img, .five_sixth_last img { max-width: 100%; }
+
+/*--- 6. Lists ---*/
+ul { padding: 0px; list-style: none; line-height: 28px; }
+ul.add li, li.add, ul.remove li, li.remove, ul.check li, li.check, ul.speech li , li.speech,
+ul.attention li, li.attention, ul.settings li, li.settings, ul.user li, li.user, ul.telephone li, li.telephone,
+ul.locked li, li.locked, ul.mail li, li.mail, ul.undo li, li.undo, ul.redo li, li.redo { padding-left: 27px; }
+
+ul.add li, li.add             { background: url('images/lists/add.png') 0px 7px no-repeat; }
+ul.remove li, li.remove       { background: url('images/lists/remove.png') 0px 7px no-repeat; }
+ul.check li, li.check         { background: url('images/lists/check.png') 0px 7px no-repeat; }
+ul.speech li , li.speech      { background: url('images/lists/comment.png') 0px 7px no-repeat; }
+ul.attention li, li.attention { background: url('images/lists/attention.png') 0px 7px no-repeat; }
+ul.settings li, li.settings   { background: url('images/lists/settings.png') 0px 7px no-repeat; }
+ul.user li, li.user           { background: url('images/lists/user.png') 0px 7px no-repeat; }
+ul.telephone li, li.telephone { background: url('images/lists/telephone.png') 0px 7px no-repeat; }
+ul.locked li, li.locked       { background: url('images/lists/locked.png') 0px 7px no-repeat; }
+ul.mail li, li.mail           { background: url('images/lists/mail.png') 0px 7px no-repeat; }
+ul.undo li, li.undo           { background: url('images/lists/undo.png') 0px 7px no-repeat; }
+ul.redo li, li.redo           { background: url('images/lists/redo.png') 0px 7px no-repeat; }
+
+/*--- 7. Notifications ---*/
+.error, .success, .alert, .remember         { display: block; position: relative; width: 98%; margin: 0 auto; padding-top: 20px; padding-bottom: 20px; min-height: 50px; }
+.error p, .success p, .alert p, .remember p { line-height: 20px; padding-right: 35px; padding-left: 70px; font-size: 12px; }
+.error a, .success a, .alert a, .remember a { display: block; width: 10px; height: 10px; position: absolute; top: 10px; right: 10px; font-size: 14px; font-weight: bold; }
+
+.error    { background: #FF9393 url('images/error.png') 20px 25px no-repeat; border: 1px solid #990000; color: #4A0000; }
+.success  { background: #D0F993 url('images/success.png') 20px 25px no-repeat; border: 1px solid #003300; color: #003300; }
+.alert    { background: #FFF38C url('images/alert.png') 20px 25px no-repeat; border: 1px solid #D9AD00; color: #886C00; }
+.remember { background: #A8DCFF url('images/remember.png') 20px 25px no-repeat; border: 1px solid #0F9FFF; color: #00609F; }
+
+.error a { color: #4A0000; }
+.success a { color: #003300; }
+.alert a { color: #886C00; }
+.remember a { color:  #00609F; }
+
+/*--- 8. ToolTip ---*/
+#tiptip_holder { display: none; position: absolute; top: 0; left: 0; z-index: 99999; }
+#tiptip_holder.tip_top { padding-bottom: 5px; }
+#tiptip_holder.tip_bottom { padding-top: 5px; }
+#tiptip_holder.tip_right { padding-left: 5px; }
+#tiptip_holder.tip_left { padding-right: 5px; }
+#tiptip_content { font-size: 11px; color: #fff; text-shadow: 0 0 2px #000; padding: 4px 8px; border: 1px solid rgba(255,255,255,0.25); background-color: rgb(25,25,25); background-color: rgba(25,25,25,0.92); background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(transparent), to(#000)); border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; box-shadow: 0 0 3px #555; -webkit-box-shadow: 0 0 3px #555; -moz-box-shadow: 0 0 3px #555; }
+#tiptip_arrow, #tiptip_arrow_inner { position: absolute; border-color: transparent; border-style: solid; border-width: 6px;  height: 0; width: 0; }
+#tiptip_holder.tip_top #tiptip_arrow { border-top-color: #fff; border-top-color: rgba(255,255,255,0.35); }
+#tiptip_holder.tip_bottom #tiptip_arrow { border-bottom-color: #fff; border-bottom-color: rgba(255,255,255,0.35); }
+#tiptip_holder.tip_right #tiptip_arrow { border-right-color: #fff; border-right-color: rgba(255,255,255,0.35); }
+#tiptip_holder.tip_left #tiptip_arrow { border-left-color: #fff; border-left-color: rgba(255,255,255,0.35); }
+#tiptip_holder.tip_top #tiptip_arrow_inner { margin-top: -7px; margin-left: -6px; border-top-color: rgb(25,25,25); border-top-color: rgba(25,25,25,0.92); }
+#tiptip_holder.tip_bottom #tiptip_arrow_inner { margin-top: -5px; margin-left: -6px; border-bottom-color: rgb(25,25,25); border-bottom-color: rgba(25,25,25,0.92); }
+#tiptip_holder.tip_right #tiptip_arrow_inner { margin-top: -6px; margin-left: -5px; border-right-color: rgb(25,25,25); border-right-color: rgba(25,25,25,0.92); }
+#tiptip_holder.tip_left #tiptip_arrow_inner { margin-top: -6px; margin-left: -7px; border-left-color: rgb(25,25,25); border-left-color: rgba(25,25,25,0.92); }
+@media screen and (-webkit-min-device-pixel-ratio:0) { #tiptip_content { padding: 4px 8px 5px 8px; background-color: rgba(45,45,45,0.88); }
+                                                       #tiptip_holder.tip_bottom #tiptip_arrow_inner { border-bottom-color: rgba(45,45,45,0.88); }
+	                                               #tiptip_holder.tip_top #tiptip_arrow_inner { border-top-color: rgba(20,20,20,0.92); }
+}
+
+
+/*=====================================================================================*/
+/*       4. HEADER                                                                     */
+/*=====================================================================================*/
+
+#header { margin-bottom: 30px; }
+
+/*--- 1. Logo ---*/
+#logo { max-width: 960px; margin: 0px auto; margin-bottom: 42px; text-align: center; }
+#logo img { max-width: 960px; }
+
+/*--- 2. Navigation ---*/
+div#navigation { float: left; position: relative; left: 50%; margin-bottom: 35px; }
+select.mobile_menu { display: none; }
+ul.menu { float: left; position: relative; left: -50%; }
+ul.menu li { float: left; margin: 0px; margin-left: 50px; padding-top: 12px; padding-bottom: 10px; }
+ul.menu li:first-child { margin-left: 0px; }
+
+/*--- 3. Hidden menu ---*/
+div#hidden_menu { display: none; position: fixed; top: 0px; left: 0px; z-index: 12000; width: 100%; height: 44px; }
+div#hidden_items { float: left; position: relative; left: 50%; }
+div#hidden_items ul { float: left; position: relative; left: -50%; }
+div#hidden_items ul li {float: left; margin-left: 50px; font-size: 16px; padding-top: 10px; padding-bottom: 10px; }
+
+/*--- 4. Intro text ---*/
+#intro { width: 675px; line-height: 30px; margin: 0px auto; font-size: 19px; text-align: center; }
+
+
+/*=====================================================================================*/
+/*       5. SLIDER                                                                     */
+/*=====================================================================================*/
+#slider_wrapper { width: 700px; height: 290px; margin: 0 auto; margin-bottom: 100px; }
+#slider a:active {outline: none;} .slides, .flex-control-nav, .flex-direction-nav {margin: 0; padding: 0; list-style: none;}
+#slider {width: 100%; margin: 0; padding: 0;}
+#slider .slides > li {display: none;}
+#slider .slides img {max-width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
+* html .slides {height: 1%;}
+.no-js .slides > li:first-child {display: block;}
+#slider {background: #fff; position: relative; zoom: 1;}
+#slider .slides {zoom: 1;}
+#slider .slides > li {position: relative;}
+.flex-caption {width: 100%; height: 33px; line-height: 33px; position: absolute; left: 0%; bottom: 5%; background: #FFF; color: #414141; font-size: 17px; font-family: 'Vollkorn', serif; text-align: center; }
+.flex-direction-nav li a {width: 68px; height: 68px; line-height: 68px; display: none; background: #FFF; position: absolute; top: 37%; cursor: pointer; border: 1px solid #232323; text-align: center; color: #232323; font-size: 28px; font-family: 'Quicksand', sans-serif; border-radius: 35px; -moz-border-radius: 35px; -webkit-border-radius: 35px; behavior: url(PIE.htc); }
+#slider:hover .flex-direction-nav li a { display: block; }
+.flex-direction-nav li .next { right: 10px; }
+.flex-direction-nav li .prev { left: 10px; }
+.flex-direction-nav li .disabled {opacity: 0.3; filter:alpha(opacity=30); cursor: default;}
+.flex-control-nav {width: 100%; position: absolute; bottom: 5px; text-align: center;}
+.flex-control-nav li {margin: 0 0 0 5px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-nav li:first-child {margin: 0;}
+.flex-control-nav li a {width: 13px; height: 13px; display: block; background: #272727; cursor: pointer; text-indent: -9999px;}
+.flex-control-nav li a:hover, .flex-control-nav li a.active { width: 11px; height: 11px; border: 1px solid #272727; background: #FFF; }
+
+
+
+/*=====================================================================================*/
+/*       6. PORTFOLIO                                                                  */
+/*=====================================================================================*/
+#portfolio { margin-bottom: 100px; }
+
+/*--- 1. Filter ---*/
+div#filter_wrapper { float: left; position: relative;  margin-bottom: 75px; left: 50%}
+ul#portfolioFilter { line-height: 18px; float: left; position: relative; left: -50%; }
+ul#portfolioFilter li { float: left; padding-right: 24px; padding-left: 24px; background: url('images/filter_separator.png') 0px 0px no-repeat; }
+ul#portfolioFilter li:first-child { background: transparent; }
+
+/*--- 2. Items ---*/
+div#portfolio_items { width: 100%; overflow: hidden;}
+ul.sortablePortfolio { width: 1050px; line-height: 1; }
+ul.sortablePortfolio li { width: 260px; height: 260px; float: left; display: block; margin-right: 90px; margin-bottom: 90px; }
+ul.sortablePortfolio li .item_content { width: 100%; height: 100%; position: relative; border-radius: 130px; -moz-border-radius: 130px;; -webkit-border-radius: 130px; behavior: url(PIE.htc); }
+ul.sortablePortfolio li .item_content img { position: absolute; top: 0px; left: 0px; z-index: 1; width: 100%; max-width: 100%; border-radius: 130px; -moz-border-radius: 130px;; -webkit-border-radius: 130px; behavior: url(PIE.htc); }
+ul.sortablePortfolio li .item_content .hidden { position: absolute; top: 0px; left: 0px; z-index: 2; display: none; width: 100%; height: 100%; border-radius: 130px; -moz-border-radius: 130px;; -webkit-border-radius: 130px; behavior: url(PIE.htc); background: url('images/overlay.png'); }
+ul.sortablePortfolio li .item_content .hidden .hidden_content { position: relative; width: 100%; height: 100%; border-radius: 130px;; -moz-border-radius: 130px; -webkit-border-radius: 130px; behavior: url(PIE.htc); }
+ul.sortablePortfolio li .item_content .hidden .hidden_content p { position: absolute; top: 48%; left: 0%; width: 100%; text-align: center; text-transform: uppercase; font-size: 15px; color: #FFF; }
+ul.sortablePortfolio li .item_content .hidden .hidden_content a.information { display: block; position: absolute; top:64%; left:33%; width: 38px; height: 38px; background: url('images/info_button.png') no-repeat; }
+ul.sortablePortfolio li .item_content .hidden .hidden_content a.information:hover { background: url('images/info_button_hover.png') no-repeat; }
+ul.sortablePortfolio li .item_content .hidden .hidden_content a.link { display: block; position: absolute; top:64%; right:33%; width: 38px; height: 38px; background: url('images/link_button.png') no-repeat; }
+ul.sortablePortfolio li .item_content .hidden .hidden_content a.link:hover { background: url('images/link_button_hover.png') no-repeat; }
+
+/*--- 3. Item Page ---*/
+div.item { width: 100%; max-width: 960px; margin: 0 auto; margin-bottom: 5%; background: transparent; position: relative; }
+div.details { float: right; width: 28%; margin-right: 7%; }
+div.slideshow_wrapper { float: left; width: 60%; margin-right: 5%; position: relative; }
+div.item a.close { width: 40px; height: 40px; display: block; position: absolute; top: 0%; right: 0%; background: url('images/portfolio_close.png') no-repeat; }
+
+/*- Item details -*/
+div.details h3 { font-size: 20px; text-align: center; margin-bottom: 12px; }
+div.details p { margin-bottom: 30px; text-align: center; }
+/*- Slider for item images -*/
+.slideshow a:active {outline: none;} .slides, .flex-control-nav, .flex-direction-nav {margin: 0; padding: 0; list-style: none;}
+.slideshow {width: 100%; margin: 0; padding: 0;}
+.slideshow .slides > li {display: none;}
+.slideshow .slides img {max-width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
+* html .slides {height: 1%;}
+.no-js .slides > li:first-child {display: block;}
+.slideshow {position: relative; zoom: 1;}
+.slideshow .slides {zoom: 1;}
+.slideshow .slides > li {position: relative;}
+.slideshow .flex-caption {width: 100%; height: 36px; line-height: 36px; padding: 0%; position: absolute; left: 0%; bottom: 0%; background: #FFF; color: #333; font-size: 18px; text-align: center; opacity: 0.9; filter: alpha(opacity=90); }
+.slideshow .flex-direction-nav li a {width: 50px; height: 50px; line-height: 1; border-radius: 0px; background-color: transparent; border: none; display: block; position: absolute; top: 10px; cursor: pointer; text-indent: -9999px; }
+.slideshow .flex-direction-nav li .next { background: url('images/portfolio_next.png') no-repeat; right: 10px; }
+.slideshow .flex-direction-nav li .prev { background: url('images/portfolio_prev.png') no-repeat; left: auto; right: 70px; }
+.slideshow .flex-direction-nav li .disabled {opacity: 0.3; filter:alpha(opacity=30); cursor: default;}
+.slideshow .flex-control-nav {width: 100%; position: absolute; bottom: 5px; text-align: center;}
+.slideshow .flex-control-nav li {margin: 0 0 0 5px; display: inline-block; zoom: 1; *display: inline;}
+.slideshow .flex-control-nav li:first-child {margin: 0;}
+.slideshow .flex-control-nav li a {width: 13px; height: 13px; display: block; background: #272727; cursor: pointer; text-indent: -9999px;}
+.slideshow .flex-control-nav li a:hover, .flex-control-nav li a.active { width: 11px; height: 11px; border: 1px solid #272727; background: #FFF; }
+
+/*--- 4. Item container ---*/
+div#item_container { width: 100%; max-width: 920px; display: none; position: relative; }
+
+
+/*=====================================================================================*/
+/*       7. SERVICES                                                                   */
+/*=====================================================================================*/
+#services { margin-bottom: 100px; }
+.services_intro { width: 800px; margin: 0 auto; margin-top: -8px; margin-bottom: 57px; }
+.services_intro p { line-height: 38px; font-size: 24px; text-align: center; }
+#service_blocks { width: 1050px; overflow-x: hidden; -ms-overflow-x: hidden; }
+.service { float:left; width: 260px; margin-right: 90px; margin-bottom: 90px; text-align: center; }
+.service h3 { margin-bottom: 15px; font-size: 20px; }
+.service p { margin-bottom: 13px; }
+.icon_container { width: 218px; height: 218px; margin: 0 auto; margin-bottom: 35px; border-radius: 110px; -moz-border-radius: 110px;; -webkit-border-radius: 110px; behavior: url(PIE.htc); }
+.icon { width: 210px; height: 210px; line-height: 210px; margin: 4px; text-align: center; border-radius: 105px; -moz-border-radius: 105px;; -webkit-border-radius: 105px; behavior: url(PIE.htc); }
+.icon img { max-width: 150px; max-height: 150px; vertical-align: middle; }
+.service a.read_more { font-size: 11px; font-weight: bold; color: #666; }
+div#service_item { width: 960px; margin: 0 auto; margin-bottom: 50px; }
+div#service_content { display: none; position: relative; padding-top: 60px; font-size: 13px; text-align: center; line-height: 22px; }
+div#service_content h3 { margin-bottom: 22px; font-size: 22px; color: #333; }
+div#service_content a#close_service { position: absolute; top: 0px; right: 460px; display: block; width: 40px; height: 40px; line-height: 40px; text-align: center; font-size: 13px; color: #FFF; background: #272727; border-radius: 20px; -moz-border-radius: 20px; -webkit-border-radius: 20px; behavior: url(PIE.htc); }
+
+
+/*=====================================================================================*/
+/*       8. ABOUT                                                                      */
+/*=====================================================================================*/
+#about { margin-bottom: 100px; }
+.about_image { width: 100%; margin-top: -5px; margin-bottom: 45px; text-align: center; }
+.about_image img { width: 260px; height: 260px; border-radius: 130px; -moz-border-radius: 130px; -webkit-border-radius: 130px; behavior: url(PIE.htc); }
+#about h3 { margin-bottom: 19px; font-size: 24px; line-height: 38px; text-align: center; }
+#about p { line-height: 30px; text-align: center; }
+
+
+/*=====================================================================================*/
+/*       9. CONTACT                                                                     */
+/*=====================================================================================*/
+#contact { margin-bottom: 100px; }
+
+/*--- 1. Contact form ---*/
+#contact_form { float: left; width: 41%; }
+#contact_form input[type="text"], #contact_form textarea { width: 95%; padding-right: 5%; margin-bottom: 23px; height: 30px; line-height: 30px; background: transparent; border: 0px; -webkit-appearance: none; }
+#contact_form textarea { width: 95%; padding-right: 5%; height: 180px; overflow: auto; line-height: 25px; }
+#contact_form button { min-width: 60px; height: 60px; border-radius: 30px; -moz-border-radius: 30px; -webkit-border-radius: 30px; behavior: url(PIE.htc); border: 0px; cursor: pointer; }
+
+/*--- 2. Contact info ---*/
+#contact_info { float: right; width: 41%; }
+#contact_info p { line-height: 25px; margin-bottom: 30px; font-size: 15px; }
+#contact_info ul { line-height: 28px; margin-bottom: 30px; font-size: 15px; }
+#contact_info ul.social_icons li { float: left; width: 47px; height: 47px; margin-right: 10px; margin-bottom: 10px; }
+#contact_info ul.social_icons li a.social_icon { display: block; width: 47px; height: 47px; }
+#contact_info ul.social_icons li a#fb { background: url('images/social_icons/fb.png') no-repeat; }
+#contact_info ul.social_icons li a#rss { background: url('images/social_icons/rss.png') no-repeat; }
+#contact_info ul.social_icons li a#dribbble { background: url('images/social_icons/dribble.png') no-repeat; }
+#contact_info ul.social_icons li a#skype { background: url('images/social_icons/skype.png') no-repeat; }
+#contact_info ul.social_icons li a#deviantart { background: url('images/social_icons/deviant.png') no-repeat; }
+#contact_info ul.social_icons li a#google { background: url('images/social_icons/google_plus.png') no-repeat; }
+#contact_info ul.social_icons li a#instagramm { background: url('images/social_icons/instagramm.png') no-repeat; }
+#contact_info ul.social_icons li a#linked { background: url('images/social_icons/linked.png') no-repeat; }
+#contact_info ul.social_icons li a#tumblr { background: url('images/social_icons/tumblr.png') no-repeat; }
+#contact_info ul.social_icons li a#vimeo { background: url('images/social_icons/vimeo.png') no-repeat; }
+#contact_info ul.social_icons li a#youtube { background: url('images/social_icons/youtube.png') no-repeat; }
+#contact_info ul.social_icons li a#twitter { background: url('images/social_icons/twitter.png') no-repeat; }
+#contact_info ul.social_icons li a#pinterest { background: url('images/social_icons/pinterest.png') no-repeat; }
+#contact_info ul.social_icons li a#soundcloud { background: url('images/social_icons/soundcloud.png') no-repeat; }
+
+
+
+/*=====================================================================================*/
+/*       10. SMARTPHONES & TABLETS                                                     */
+/*=====================================================================================*/
+
+
+/*--- Screen <= 960px ( Tablets portrait view  )---*/
+@media screen and (max-width: 960px) {
+
+     /* General */
+     #wrapper { width: 700px; }
+     #logo, #logo img { max-width: 700px; }
+     
+     /* Portfolio */
+     ul.sortablePortfolio { width: 100%; }
+     ul.sortablePortfolio li { margin-right: 45px; margin-left: 45px; }
+     div.item { max-width: 700px; }
+     
+     /* Services */
+     .services_intro { width: 700px; }
+     #service_blocks { width: 700px; }
+     .service { margin-right: 45px; margin-left: 45px; }
+     div#service_item { width: 600px; }
+     div#service_content a#close_service { right: 280px; }
+
+}
+
+/*--- Screen <= 700px ( iPhone5 landscape view )---*/
+@media screen and (max-width: 700px) {
+  
+     /* General */
+     #wrapper { width: 520px; }
+     #logo, #logo img { max-width: 520px; }
+     #intro { width: 520px; }
+     
+     /* Grids */
+     .one_half, .one_half_last { width: 100%; margin-right: 0%; }
+     .one_third, .one_third_last       { width: 100%; margin-right: 0%; }
+     .two_third, .two_third_last       { width: 100%; margin-right: 0%; }
+     .one_fourth, .one_fourth_last     { width: 100%; margin-right: 0%; }
+     .two_fourth, .two_fourth_last     { width: 100%; margin-right: 0%; }
+     .three_fourth, .three_fourth_last { width: 100%; margin-right: 0%; }
+     .one_fifth, .one_fifth_last       { width: 100%; margin-right: 0%; }
+     .two_fifth, .two_fifth_last       { width: 100%; margin-right: 0%; }
+     .three_fifth, .three_fifth_last   { width: 100%; margin-right: 0%; }
+     .four_fifth, .four_fifth_last     { width: 100%; margin-right: 0%; }
+     
+     /* Navigation */
+     div#navigation { float: none; left: auto; margin-bottom: 35px; }
+     ul.menu { display: none; }
+     div#hidden_items { display: none; }
+     select.mobile_menu { display: block; width: 260px; margin: 0 130px; }
+     div#hidden_menu select { margin: 0 auto; margin-top: 12px; }
+     
+     /* Slider */
+     #slider_wrapper { width: 520px; height: 215px; margin-bottom: 30px; }
+     #slider:hover .flex-direction-nav li a { display: none; }
+
+     /* Portfolio */
+     div#filter_wrapper { float: none; left: auto; }
+     ul#portfolioFilter { float: none; left: auto; text-align: center; line-height: 250%; }
+     ul#portfolioFilter li { float: none; padding: 0px; background: transparent; }
+     ul#portfolioFilter li:first-child { background: transparent; }
+     ul.sortablePortfolio { width: 100%; }
+     ul.sortablePortfolio li { width: 200px; height: 200px; margin-right: 30px; margin-left: 30px; }
+     ul.sortablePortfolio li .item_content { border-radius: 100px; -moz-border-radius: 100px;; -webkit-border-radius: 100px; }
+     ul.sortablePortfolio li .item_content img { width: 100%; height: 100%; border-radius: 100px; -moz-border-radius: 100px;; -webkit-border-radius: 100px; }
+     ul.sortablePortfolio li .item_content .hidden { border-radius: 100px; -moz-border-radius: 100px;; -webkit-border-radius: 100px; }
+     ul.sortablePortfolio li .item_content .hidden .hidden_content { border-radius: 100px;; -moz-border-radius: 130px; -webkit-border-radius: 100px; }
+     ul.sortablePortfolio li .item_content .hidden .hidden_content p { position: absolute; left: 0%; }
+     ul.sortablePortfolio li .item_content .hidden .hidden_content a.information { left:25%; }
+     ul.sortablePortfolio li .item_content .hidden .hidden_content a.link { right:25%; }
+     div.item { max-width: 520px; padding-top: 60px; }
+     div.details { float: none; width: 100%; margin-right: 0px; }
+     div.slideshow_wrapper { float: none; width: 100%; margin-right: 0px; }
+     div.item a.close { right: 240px; }
+
+     /* Services */
+     .services_intro { width: 520px; }
+     #service_blocks { width: 520px; }
+     .service { width: 200px; margin-right: 30px; margin-left: 30px; margin-bottom: 50px; }
+     div#service_item { width: 500px; }
+     div#service_content a#close_service { right: 280px; }
+     
+     /* Contact */
+     #contact_form { float: none; width: 100%; margin-bottom: 40px; }
+     #contact_info { float: none; width: 100%; }
+
+}
+
+/*--- Screen <= 500px ( iPhone 3 & 4 ( and many more devices... ) landscape view )---*/
+@media screen and (max-width: 500px) { 
+
+     /* General */
+     #wrapper { width: 420px; }
+     #logo, #logo img { max-width: 420px; }
+     #intro { width: 420px; }
+     
+     /* Navigation */
+     select.mobile_menu { margin: 0 80px; }
+
+     /* Slider */
+     #slider_wrapper { width: 420px; height: 175px; }
+
+     /* Portfolio */
+     div#filter_wrapper { margin-bottom: 30px; }
+     ul.sortablePortfolio li { margin-right: 5px; margin-left: 5px; margin-bottom: 10px; }
+     div.item { max-width: 420px; }
+     div.item a.close { right: 190px; }
+
+     /* Services */
+     .services_intro { width: 420px; }
+     #service_blocks { width: 420px; }
+     .service { margin-right: 5px; margin-left: 5px; margin-bottom: 20px; }
+     .icon_container { width: 188px; height: 188px; border-radius: 95px; -moz-border-radius: 95px;; -webkit-border-radius: 95px; }
+     .icon { width: 180px; height: 180px; line-height: 180px; margin: 4px; border-radius: 90px; -moz-border-radius: 90px;; -webkit-border-radius: 90px; }
+     div#service_item { width: 400px; }
+     div#service_content a#close_service { right: 180px; }
+     
+     /* Contact */
+     #contact_form { float: none; width: 100%; margin-bottom: 40px; }
+     #contact_info { float: none; width: 100%; }
+
+}
+
+/*--- Screen <= 360px ( iPhone 3 & 4 &5 ( and many more devices... ) portrait )---*/
+@media screen and (max-width: 360px) { 
+
+     /* General */
+     #wrapper { width: 300px; }
+     #logo, #logo img { max-width: 300px; }
+     #intro { width: 300px; }
+     
+     /* Navigation */
+     select.mobile_menu { margin: 0 20px; }
+
+     /* Slider */
+     #slider_wrapper { width: 300px; height: 125px; }
+
+     /* Portfolio */
+     div#filter_wrapper { margin-bottom: 30px; }
+     ul.sortablePortfolio li { width: 260px; height: 260px; margin-right: 20px; margin-left: 20px; margin-bottom: 40px; }
+     ul.sortablePortfolio li .item_content { border-radius: 130px; -moz-border-radius: 130px; -webkit-border-radius: 130px; }
+     ul.sortablePortfolio li .item_content img { width: 100%; max-width: 100%; border-radius: 130px; -moz-border-radius: 130px; -webkit-border-radius: 130px; }
+     ul.sortablePortfolio li .item_content .hidden { border-radius: 130px; -moz-border-radius: 130px; -webkit-border-radius: 130px; }
+     ul.sortablePortfolio li .item_content .hidden .hidden_content { border-radius: 130px; -moz-border-radius: 130px; -webkit-border-radius: 130px; }
+     ul.sortablePortfolio li .item_content .hidden .hidden_content a.information { left:33%; }
+     ul.sortablePortfolio li .item_content .hidden .hidden_content a.link { right:33%; }
+     div.item { max-width: 420px; }
+     div.item a.close { right: 130px; }
+
+     /* Services */
+     .services_intro { width: 300px; }
+     #service_blocks { width: 300px; }
+     .service { float:none; width: 260px; margin: 0 auto; margin-bottom: 50px; }
+     .icon_container { width: 218px; height: 218px; margin: 0 auto; margin-bottom: 35px; border-radius: 110px; -moz-border-radius: 110px;; -webkit-border-radius: 110px; }
+     .icon { width: 210px; height: 210px; line-height: 210px; margin: 4px; text-align: center; border-radius: 105px; -moz-border-radius: 105px;; -webkit-border-radius: 105px; }
+     div#service_item { width: 300px; }
+     div#service_content a#close_service { right: 130px; }
+     
+     /* Contact */
+     #contact_form { float: none; width: 100%; margin-bottom: 40px; }
+     #contact_info { float: none; width: 100%; }
+
+}
+
+
+/*--- Styles for High Resolution Screens ---*/
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+
+     /*-  Scroll buttons -*/
+     a.scroll_down { background: url('images/down@2X.png'); background-size: 46px 46px; }
+     a.scroll_top { background: url('images/up@2X.png'); background-size: 46px 46px; }
+     
+     /*- Notification boxes -*/
+     .error, .success, .alert, .remember { background-size: 30px 30px; }
+     .error    { background: #FF9393 url('images/error@2X.png') 20px 25px no-repeat; }
+     .success  { background: #D0F993 url('images/success@2X.png') 20px 25px no-repeat; }
+     .alert    { background: #FFF38C url('images/alert@2X.png') 20px 25px no-repeat; }
+     .remember { background: #A8DCFF url('images/remember@2X.png') 20px 25px no-repeat; }
+
+     /*- Custom list styles -*/
+     ul.add li, li.add, ul.remove li, li.remove, ul.check li, li.check, ul.speech li , li.speech,
+     ul.attention li, li.attention, ul.settings li, li.settings, ul.user li, li.user, ul.telephone li, li.telephone,
+     ul.locked li, li.locked, ul.mail li, li.mail, ul.undo li, li.undo, ul.redo li, li.redo { background-size: 14px 14px; }
+     ul.add li, li.add             { background: url('images/lists/add@2X.png') 0px 7px no-repeat; }
+     ul.remove li, li.remove       { background: url('images/lists/remove@2X.png') 0px 7px no-repeat;  }
+     ul.check li, li.check         { background: url('images/lists/check@2X.png') 0px 7px no-repeat; }
+     ul.speech li , li.speech      { background: url('images/lists/comment@2X.png') 0px 7px no-repeat; }
+     ul.attention li, li.attention { background: url('images/lists/attention@2X.png') 0px 7px no-repeat; }
+     ul.settings li, li.settings   { background: url('images/lists/settings@2X.png') 0px 7px no-repeat; }
+     ul.user li, li.user           { background: url('images/lists/user@2X.png') 0px 7px no-repeat; }
+     ul.telephone li, li.telephone { background: url('images/lists/telephone@2X.png') 0px 7px no-repeat; }
+     ul.locked li, li.locked       { background: url('images/lists/locked@2X.png') 0px 7px no-repeat; }
+     ul.mail li, li.mail           { background: url('images/lists/mail@2X.png') 0px 7px no-repeat; }
+     ul.undo li, li.undo           { background: url('images/lists/undo@2X.png') 0px 7px no-repeat; }
+     ul.redo li, li.redo           { background: url('images/lists/redo@2X.png') 0px 7px no-repeat; }
+
+     /*- Portfolio control buttons -*/
+     ul.sortablePortfolio li .item_content .hidden .hidden_content a.information { background: url('images/info_button@2X.png'); background-size: 38px 38px; }
+     ul.sortablePortfolio li .item_content .hidden .hidden_content a.information:hover { background: url('images/info_button_hover@2X.png'); background-size: 38px 38px; }
+     ul.sortablePortfolio li .item_content .hidden .hidden_content a.link { background: url('images/link_button@2X.png'); background-size: 38px 38px; }
+     ul.sortablePortfolio li .item_content .hidden .hidden_content a.link:hover { background: url('images/link_button_hover@2X.png'); background-size: 38px 38px; }
+     div.item a.close { background: url('images/portfolio_close@2X.png'); background-size: 40px 40px; }
+     .slideshow .flex-direction-nav li .next { background: url('images/portfolio_next@2X.png'); background-size: 50px 50px; }
+     .slideshow .flex-direction-nav li .prev { background: url('images/portfolio_prev@2X.png'); background-size: 50px 50px; }
+     
+     /* Social icons */
+     #contact_info ul.social_icons li a.social_icon { background-size: 47px 47px; }
+     #contact_info ul.social_icons li a#fb { background: url('images/social_icons/fb@2X.png'); }
+     #contact_info ul.social_icons li a#rss { background: url('images/social_icons/rss@2X.png'); }
+     #contact_info ul.social_icons li a#dribbble { background: url('images/social_icons/dribble@2X.png'); }
+     #contact_info ul.social_icons li a#skype { background: url('images/social_icons/skype@2X.png'); }
+     #contact_info ul.social_icons li a#deviantart { background: url('images/social_icons/deviant@2X.png'); }
+     #contact_info ul.social_icons li a#google { background: url('images/social_icons/google_plus@2X.png'); }
+     #contact_info ul.social_icons li a#instagramm { background: url('images/social_icons/instagramm@2X.png'); }
+     #contact_info ul.social_icons li a#linked { background: url('images/social_icons/linked@2X.png'); }
+     #contact_info ul.social_icons li a#tumblr { background: url('images/social_icons/tumblr@2X.png'); }
+     #contact_info ul.social_icons li a#vimeo { background: url('images/social_icons/vimeo@2X.png'); }
+     #contact_info ul.social_icons li a#youtube { background: url('images/social_icons/youtube@2X.png'); }
+     #contact_info ul.social_icons li a#twitter { background: url('images/social_icons/twitter@2X.png'); }
+     #contact_info ul.social_icons li a#pinterest { background: url('images/social_icons/pinterest@2X.png'); }
+     #contact_info ul.social_icons li a#soundcloud { background: url('images/social_icons/soundcloud@2X.png') no-repeat; }
+
+}

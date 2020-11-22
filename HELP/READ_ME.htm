@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html>
+<head><title>"ME" Template Documentation by Magna Themes</title>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,700,500' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="assets/mCustomScrollbar.css" />
+<link rel="stylesheet" type="text/css" href="assets/style.css" />
+<link rel="stylesheet" type="text/css" href="assets/shCore.css" />
+<link rel="stylesheet" type="text/css" href="assets/shThemeDefault.css" />
+
+<script type="text/javascript" src="assets/scripts/jquery-1.5.1.min.js"></script>
+<script type="text/javascript" src="assets/scripts/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="assets/scripts/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="assets/scripts/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="assets/scripts/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="assets/scripts/mousewheel.min.js"></script>
+<script type="text/javascript" src="assets/scripts/mCustomScrollbar.min.js"></script>
+<script type="text/javascript" src="assets/scripts/custom.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+     $('ul#navigation li a, #top_toc ul li a').click(function(){
+               var id = $(this).attr("href");
+               $('html,body').stop().animate({scrollTop: $("h2"+id).offset().top - 100},'slow');
+     return false;
+     });
+});
+</script>
+</head>
+
+<body>
+
+      <!-- HEADER -->
+      <div id="header">
+
+           <div id="header_content">
+
+                <!-- Logo -->
+                <div id="theme_name">
+                     <h1>ME - Responsive Portfolio Theme</h1>
+                </div>
+                
+                <!-- Theme name -->
+                <div id="version_number">
+                     <h2>Version 3.0 ( 15/03/2014 )</h2>
+                </div>
+
+           </div>
+
+      </div>
+      <!-- END:HEADER -->
+      
+      <!-- WRAPPER -->
+      <div id="wrapper">
+      
+           <!-- Content -->
+           <div id="content">
+           
+                <h2 id="welcome">WELCOME!</h2>
+                
+                <p>
+                Thank you for purchasing my theme. The "Me" is a one page html/css template that comes with
+                well structured, and well commented code. In this documentation you can find every
+                important information that you need to know about the customization, but
+                if you have any questions that aren't covered in this helpfile, don't hesitate to contact me
+                <a href="http://magna-themes.com/support">via our support system</a>, or email me via my
+                user page contact form <a href="http://themeforest.net/user/MagnaThemes">here</a>.
+                Thanks so much!<br /><br /><br />
+                </p>
+                
+                <h3>Table of contents</h3>
+                
+                <ul id="navigation">
+                    <li><a href="#start">1) Getting started</a></li>
+                    <li><a href="#files">2) Files in the package</a></li>
+                    <li><a href="#general">3) General structure</a></li>
+                    <li><a href="#grids">4) Responsive grid system</a></li>
+                    <li><a href="#head">5) Elements inside the &lt;head></a></li>
+                    <li><a href="#logo">6) Add a logo to your site</a></li>
+                    <li><a href="#nav">7) Navigation</a></li>
+                    <li><a href="#slider">8) Slider</a></li>
+                    <li><a href="#portfolio">9) Portfolio</a></li>
+                    <li><a href="#about">10) About</a></li>
+                    <li><a href="#services">11) Services</a></li>
+                    <li><a href="#contact">12) Contact</a></li>
+                    <li><a href="#notifications">13) Notification boxes</a></li>
+                    <li><a href="#styles">14) Stylesheets</a></li>
+                    <li><a href="#fonts">15) Working with the fonts</a></li>
+                    <li><a href="#credits">16) Credits</a></li>
+                </ul>
+                
+                <div id="top_menu">
+                     <div id="top_menu_content">
+                          <div class="top_menu_button" id="closed">
+                               CLICK HERE FOR TABLE OF CONTENTS
+                          </div>
+                          <div class="top_menu_button" id="opened">
+                               CLICK HERE TO CLOSE TABLE OF CONTENTS
+                          </div>
+                          <div id="top_toc">
+                              <ul>
+                                  <li><a href="#start">1) Getting started</a></li>
+                                  <li><a href="#files">2) Files in the package</a></li>
+                                  <li><a href="#general">3) General structure</a></li>
+                                  <li><a href="#grids">4) Responsive grid system</a></li>
+                                  <li><a href="#head">5) Elements inside the &lt;head></a></li>
+                                  <li><a href="#logo">6) Add a logo to your site</a></li>
+                                  <li><a href="#nav">7) Navigation</a></li>
+                                  <li><a href="#slider">8) Slider</a></li>
+                                  <li><a href="#portfolio">9) Portfolio</a></li>
+                                  <li><a href="#about">10) About</a></li>
+                                  <li><a href="#services">11) Services</a></li>
+                                  <li><a href="#contact">12) Contact</a></li>
+                                  <li><a href="#notifications">13) Notification boxes</a></li>
+                                  <li><a href="#styles">14) Stylesheets</a></li>
+                                  <li><a href="#fonts">15) Working with the fonts</a></li>
+                                  <li><a href="#credits">16) Credits</a></li>
+                              </ul>
+                          </div>
+
+                     </div>
+                </div>
+                
+                <hr />
+                
+                <!-- GETTING STARTED -->
+                <h2 id="start">GETTING STARTED</h2>
+                
+                <p>
+                The downloaded package should contains four directories:<br /><br />
+
+                <strong>1. Fireworks PNG:</strong> here are the original layered png files<br />
+                <strong>2. HELP:</strong> the documentation file that you actually reading now:)<br />
+                <strong>3. html:</strong> this folder contains the entire tamplate with all of its elements<br />
+                <strong>4. PSD:</strong> here you can find the psd files, but they are generated with fireworks ( Because I working with FW )<br /><br />
+
+
+                Creating a backup folder for the original template files is highly recommended before start the customizing.
+                If something goes wrong, those backup files can be very useful.<br /><br />
+
+                To start the work with your new website, just place the html folder in any directory on your computer, 
+                open it, and open the index.htm file. If you doubleclick on the file, it will be opened normally
+                in your default browser, but you need to open it with one of the popular text editors too.
+                I prefer <a href="http://www.contexteditor.org/" target="_blank">Context</a>, but the 
+                <a href="http://notepad-plus-plus.org/">Notepad++</a> is can be an another option.<br /><br />
+
+                <strong>Which is the best browser for the developement?</strong><br />
+                I using Chrome, because it comes with the best developer tools that I've ever seen ( at least this is my opinion ). But..
+                before start the work, you need to know that the ajax functions doesn't work in chrome ( in one word: the portfolio and
+                service items won't be loaded )... except you use a LAMP emulator on your local computer ( for example: <a href="http://www.apachefriends.org/en/xampp.html">xampp (for windows)</a>,
+                <a href="http://www.appservnetwork.com/">appserw (for windows)</a> and <a href="http://www.mamp.info/en/index.html">mamp (for mac)</a> ).
+                In one word: if you have a webserver, I recommend Chrome, otherwise the Firefox
+                will be a best solution for you.
+                </p>
+
+                <hr />
+                <!-- END: GETTING STARTED -->
+                
+                <!-- FILES -->
+                <h2 id="files">FILES IN THE PACKAGE</h2>
+                
+                <p>
+                This theme comes with three html files, but you can find some other file types such as javascript, and php.
+                All of these are listed and shortly explained below:<br /><br /><br />
+                </p>
+
+                <h3>HTML:</h3>
+
+                <p>
+                <strong>index.htm</strong> - The main tamplate file in the defaul style.<br />
+                <strong>portfolio_item.htm</strong> - A sample portfolio item that contains a slider for the project images. This file is loaded by ajax.<br />
+                <strong>sample_service.htm</strong> - A sample service item. Contains text only. This file is loaded by ajax just like the portfolio contents.<br /><br /><br />
+                </p>
+                
+                <h3>CSS:</h3>
+                
+                <p>
+                <strong>styles/styles.css</strong> - The default stylesheet, and a very important one, because it contains all of the general styles for the layout, and typography, so please create a backup file, before start to modify it! <br /><br />
+                <strong>styles/settings.css</strong> - This file is built to make the customization easier. It contains the colors and font families only, but it is deactivated in defeault case.<br /><br />
+                <strong>styles/ie8.css</strong> - This file makes the theme ie8 compatible.<br /><br /><br />
+                </p>
+                
+                <h3>JAVASCRIPT:</h3>
+                
+                <p>
+                <strong>jquery.js</strong> - The JQuery core, very very important, and should be the first.<br />
+                <strong>effects.js</strong> - An effect library for JQuery.<br />
+                <strong>easing.js</strong> - An other effect library for JQuery.<br />
+                <strong>flexslider-min.js</strong> - The script behind the responsive slider.<br />
+                <strong>mobilemenu.js</strong> - This file responsible for the navigation on mobile devices.<br />
+                <strong>tipTip.js</strong> - Tooltip plugin.<br />
+                <strong>hoverIntent.js</strong> - Extends the jquery library with the hoverIntent() event.<br />
+                <strong>quicksand.js</strong> - This plugin works when you click on a link in a portfolio filter.<br />
+                <strong>custom.js</strong> - This script contains the specific codes for this template.<br /><br /><br />
+                </p>
+                
+                <h3>PHP:</h3>
+                
+                <p>
+                <strong>phpmailer.php</strong> - A robust PHP email transport class.<br />
+                <strong>mail.php</strong> - Here you can add your email address to the contact form.<br /><br /><br />
+                </p>
+                
+                <h3>IMAGES:</h3>
+                
+                <p>
+                You can find some great icons in the images/service_icons folder. These can be useful when you want to show your
+                services on the site. The theme contains a few cool social icons too in the images/social_icons folder.
+                Unfortunately I can't include the images from the demo, but you may download some of them for free. More
+                details in the credits chapter.
+                </p>
+                <hr />
+                <!-- END: FILES -->
+                
+                <!-- GENERAL STRUCTURE -->
+                <h2 id="general">GENERAL STRUCTURE</h2>
+                
+                <p>
+                This theme has a responsive layout, with one main column. All of the elements
+                are nested within a div with an id of "wrapper". There are six main sections within
+                the "wrapper":<br /><br />
+
+
+                1) header<br />
+                2) slider_wrapper<br />
+                3) portfolio<br />
+                4) services<br />
+                5) about<br />
+                6) features<br />
+                7) contact<br /><br />
+
+                The "features" div is created for demostrates the grid system of the template on the demo page, so
+                I recommend you to remove it. Of course, if you don't need one of the other sections ( for example the about ),
+                you may remove it.
+                </p>
+
+                <pre class="brush: xml;">
+          &lt;!DOCTYPE html>
+          &lt;html>
+          
+          &lt;head>
+          [... Contains the global informations, styles, scripts etc ...]
+          &lt;/head>
+
+          &lt;body>
+
+                   &lt;div id="wrapper">
+
+                           &lt;div id="header">
+                                   &lt;div id="logo">
+                                   [... Here goes your logo ...]
+                                   &lt;/div>
+
+                                   &lt;div id="navigation">
+                                   [... Contains the navigation ...]
+                                   &lt;/div>
+
+                                   &lt;div id="intro">
+                                   [... Here goes the intro text ...]
+                                   &lt;/div>
+                           &lt;/div>
+
+
+                           &lt;div id="slider_wrapper">
+                           [... Here goes the slider ...]
+                           &lt;/div>
+
+
+                           &lt;div id="portfolio">
+                           [... Contains the codes for the portfolio ...]
+                           &lt;/div>
+
+                           &lt;div id="services">
+                           [... Here goes the blocks with icons ...]
+                           &lt;/div>
+
+                           &lt;div id="about">
+                           [... Contains the about me section ...]
+                           &lt;/div>
+
+                           &lt;div id="features">
+                           [... Contains features ( feel free to remove from your live site ) ...]
+                           &lt;/div>
+
+                           &lt;div id="contact">
+                           [... This div contains the contact form and contact informations ...]
+                           &lt;/div>
+
+                   &lt;/div>
+
+          &lt;/body>
+
+          &lt;/html>
+                </pre>
+                <hr />
+                <!-- END: GENERAL STRUCTURE -->
+                
+                <!-- RESPONSIVE GRIDS -->
+                <h2 id="grids">RESPONSIVE GRID SYSTEM</h2>
+
+                <p>
+                The Grid system allows you to create complex layouts easily. You have 5 columns and its variations
+                to create the layout that you wish. Below you can see some basic examples, but if you need more information,
+                just check out the #features div in the index.htm and you will see how it works.<br /><br />
+                </p>
+                
+                <div style="float: left; width: 440px; margin-bottom: 40px;">
+                     <img src="assets/images/one_half.png" alt="" />
+                </div>
+                <div style="float: right; width: 310px;">
+                     <pre class="brush: xml;">
+                     &lt;div class="one_half">
+                     [... Some kind of content ...]
+                     &lt;/div>
+             
+                     &lt;div class="one_half_last">
+                     [... Some kind of content ...]
+                     &lt;/div>
+                     </pre>
+                </div>
+                <div style="clear:both;"></div>
+                
+                <div style="float: left; width: 440px; margin-bottom: 40px;">
+                     <img src="assets/images/one_third.png" alt="" />
+                </div>
+                <div style="float: right; width: 310px;">
+                     <pre class="brush: xml;">
+                     &lt;div class="one_third">
+                     [... Some kind of content ...]
+                     &lt;/div>
+             
+                     &lt;div class="one_third">
+                     [... Some kind of content ...]
+                     &lt;/div>
+             
+                     &lt;div class="one_third_last">
+                     [... Some kind of content ...]
+                     &lt;/div>
+                     </pre>
+                </div>
+                <div style="clear:both;"></div>
+                
+                <div style="float: left; width: 440px;">
+                     <img src="assets/images/one_fourth.png" alt="" />
+                </div>
+                <div style="float: right; width: 310px;">
+                     <pre class="brush: xml;">
+                     &lt;div class="one_fourth">
+                     [... Some kind of content ...]
+                     &lt;/div>
+             
+                     &lt;div class="one_fourth">
+                     [... Some kind of content ...]
+                     &lt;/div>
+                     
+                     &lt;div class="one_fourth">
+                     [... Some kind of content ...]
+                     &lt;/div>
+             
+                     &lt;div class="one_fourth_last">
+                     [... Some kind of content ...]
+                     &lt;/div>
+                     </pre>
+                </div>
+                <div style="clear:both;"></div>
+                <hr />
+                <!-- END: RESPONSIVE GRIDS -->
+                
+                <!-- HEAD -->
+                <h2 id="head">ELEMENTS INSIDE THE &lt;head></h2>
+                
+                <p>
+                The head tag contains all of the global information of the document that the browser need to know,
+                for example the title, the default characterset, the location of the stylesheets and
+                javascript files. You can specify here an icon to represent your webpage on Apple devices. To
+                learn more about the apple touch icons, <a href="https://developer.apple.com/library/ios/#DOCUMENTATION/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html">click here</a>.
+                </p>
+                
+                <pre class="brush: xml;">
+                
+                &lt;head>
+
+                &lt;title>[... Site title ...]&lt;/title>
+
+                <!-- Configure viewport for mobile / tabled devices -->
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+                <!-- Define keywords for search engines -->
+                &lt;meta name="keywords" content="Keyword1, Keyword2, Keyword3">
+
+                <!-- Define a description of your web page -->
+                &lt;meta name="description" content="This is the description!">
+
+                <!-- Shorcut icon -->
+                &lt;link rel="shortcut icon" href="images/favicon.png">
+                <!-- Touch icon for non-Retina iPhone, iPod Touch, and Android 2.1+  -->
+                &lt;link rel="apple-touch-icon" href="images/apple.png">
+                <!-- Touch icon for the first generation iPads  -->
+                &lt;link rel="apple-touch-icon" sizes="72x72" href="images/apple_72x72.png">
+                <!-- Touch icon for the first generation iPhone4  -->
+                &lt;link rel="apple-touch-icon" sizes="114x114" href="images/apple_114x114.png">
+                <!-- Touch icon for iPad3  -->
+                &lt;link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple_144x144-precomposed.png">
+
+                <!-- Google fonts -->
+                &lt;link href='http://fonts.googleapis.com/css?family=Brawler' rel='stylesheet' type='text/css'>
+                &lt;link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic,400,700' rel='stylesheet' type='text/css'>
+                &lt;link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+                &lt;link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+
+                <!-- Stylesheets -->
+                &lt;link rel="stylesheet" type="text/css" href="styles/style.css" />
+                &lt;link rel="stylesheet" type="text/css" href="styles/settings.css" />
+                <!--[if IE 8]>
+                <link rel="stylesheet" type="text/css" href="styles/ie8.css" />
+                <![endif]-->
+
+                <!-- IE Specific script to enable media queries -->
+                <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+                <![endif]-->
+
+                <!-- Javascript files -->
+                &lt;script type="text/javascript" src="scripts/jquery-1.5.1.min.js">&lt;/script>
+                &lt;script type="text/javascript" src="scripts/effects.js">&lt;/script>
+                &lt;script type="text/javascript" src="scripts/hoverIntent.js">&lt;/script>
+                &lt;script type="text/javascript" src="scripts/easing.js">&lt;/script>
+                &lt;script type="text/javascript" src="scripts/flexslider-min.js">&lt;/script>
+                &lt;script type="text/javascript" src="scripts/quicksand.js">&lt;/script>
+                &lt;script type="text/javascript" src="scripts/tipTip.js">&lt;/script>
+                &lt;script type="text/javascript" src="scripts/mobilemenu.js">&lt;/script>
+                &lt;script type="text/javascript" src="scripts/custom.js">&lt;/script>
+
+                &lt;/head>
+
+                </pre>
+                <hr />
+                <!-- END: HEAD -->
+                
+                <!-- LOGO -->
+                <h2 id="logo">HOW TO ADD A LOGO TO YOUR SITE</h2>
+                
+                <p>
+                If you have a logo, just copy it to the images folder then add the correct the path to the img tag inside the #logo &lt;div>.
+                </p>
+                
+                <pre class="brush: xml;">
+                &lt;div id="logo">
+                     &lt;img src="[... Path to your logo ...]" alt="" />
+                &lt;/div>
+                </pre>
+                <hr />
+                <!-- END: LOGO -->
+                
+                <!-- NAVIGATION -->
+                <h2 id="nav">NAVIGATION</h2>
+                
+                <p>
+                There are two navigations in the template. The main menu can be found under the logo, and always visible. The hidden menu appears
+                only when the main menu has disappeared (try to scroll down the page). Both of them are based on a simple unordered list, 
+                with left floated items. It is important to know that the page scroll effects gets their target from the href and value attributes. 
+                So, you may edit the text label of the menu items, but please don't edit the href attributes!
+                </p>
+                
+                <pre class="brush: xml;">
+                &lt;div id="navigation">
+
+                     &lt;!-- Menu items -->
+                     &lt;ul class="menu">
+                         &lt;li>&lt;a href="#header">HOME&lt;/a>&lt;/li>
+                         &lt;li>&lt;a href="#portfolio">WORKS&lt;/a>&lt;/li>
+                         &lt;li>&lt;a href="#services">SERVICES&lt;/a>&lt;/li>
+                         &lt;li>&lt;a href="#about">ABOUT&lt;/a>&lt;/li>
+                         &lt;li>&lt;a href="#features">FEATURES&lt;/a>&lt;/li>
+                         &lt;li>&lt;a href="#contact">CONTACT&lt;/a>&lt;/li>
+                     &lt;/ul>
+      
+                     &lt;!-- Hidden menu -->
+                     &lt;div id="hidden_menu">
+                          &lt;div id="hidden_items">
+                               &lt;ul>
+                                   &lt;li>&lt;a href="#header">HOME&lt;/a>&lt;/li>
+                                   &lt;li>&lt;a href="#portfolio">WORKS&lt;/a>&lt;/li>
+                                   &lt;li>&lt;a href="#services">SERVICES&lt;/a>&lt;/li>
+                                   &lt;li>&lt;a href="#about">ABOUT&lt;/a>&lt;/li>
+                                   &lt;li>&lt;a href="#features">FEATURES&lt;/a>&lt;/li>
+                                   &lt;li>&lt;a href="#contact">CONTACT&lt;/a>&lt;/li>
+                               &lt;/ul>
+                          &lt;/div>
+                     &lt;/div>
+      
+                &lt;/div>
+                &lt;div class="clear">&lt;/div>
+                </pre>
+                
+                <hr />
+                <!-- END: NAVIGATION -->
+                
+                <!-- SLIDER -->
+                <h2 id="slider">SLIDER</h2>
+                
+                <p>
+                The slider is automatically initialized in the custom.js To create new slides you need to provide the images and links
+                within a html unordered list like below. But please don't remove the "slides" class from the 
+                &lt;ul> tag, because the plugin requires that class strictly. The default size of the slider is 700x290 pixels,
+                but If you care about devices with Retina screen, you need to use 1400x680 images.
+                </p>
+                
+                <pre class="brush: xml;">
+                &lt;div id="slider_wrapper">
+
+                     &lt;div id="slider">
+
+                          &lt;ul class="slides">
+
+                              <!-- Simple slide -->
+                              &lt;li>
+                                  &lt;img src="[... Image url ...]" />
+                              &lt;/li>
+                              
+                              <!-- Slide with caption -->
+                              &lt;li>
+                                  &lt;img src="[... Image url ...]" />
+                                  &lt;p class="flex-caption">[... Your caption ...]&lt;/p>
+                              &lt;/li>
+
+                              <!-- Simple slide -->
+                              &lt;li>
+                                  &lt;img src="[... Image url ...]" />
+                              &lt;/li>
+
+	                  &lt;/ul>
+
+	             &lt;/div>
+
+                &lt;/div>
+                </pre><br /><br />
+                
+                <h3>List of the options ( custom.js file )</h3>
+                
+                <pre class="brush: js;">
+                animation: "slide",              //String: Select your animation type, "fade" or "slide"
+                slideDirection: "horizontal",   //String: Select the sliding direction, "horizontal" or "vertical"
+                slideshow: true,                //Boolean: Animate slider automatically
+                slideshowSpeed: 7000,           //Integer: Set the speed of the slideshow cycling, in milliseconds
+                animationDuration: 600,         //Integer: Set the speed of animations, in milliseconds
+                directionNav: true,             //Boolean: Create navigation for previous/next navigation? (true/false)
+                controlNav: false,               //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage
+                keyboardNav: true,              //Boolean: Allow slider navigating via keyboard left/right keys
+                mousewheel: false,              //Boolean: Allow slider navigating via mousewheel
+                prevText: "",                   //String: Set the text for the "previous" directionNav item
+                nextText: "",                   //String: Set the text for the "next" directionNav item
+                pausePlay: false,               //Boolean: Create pause/play dynamic element
+                pauseText: 'Pause',             //String: Set the text for the "pause" pausePlay item
+                playText: 'Play',               //String: Set the text for the "play" pausePlay item
+                randomize: false,               //Boolean: Randomize slide order
+                slideToStart: 0,                //Integer: The slide that the slider should start on. Array notation (0 = first slide)
+                animationLoop: true,            //Boolean: Should the animation loop? If false, directionNav will received "disable" classes at either end
+                pauseOnAction: true,            //Boolean: Pause the slideshow when interacting with control elements, highly recommended.
+                pauseOnHover: false,            //Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
+                manualControls: "",             //Selector: Declare custom control navigation. Example would be ".flex-control-nav li" or "#tabs-nav li img", etc. The number of elements in your controlNav should match the number of slides/tabs.
+                start: function(){},            //Callback: function(slider) - Fires when the slider loads the first slide
+                before: function(){},           //Callback: function(slider) - Fires asynchronously with each slider animation
+                after: function(){},            //Callback: function(slider) - Fires after each slider animation completes
+                end: function(){}               //Callback: function(slider) - Fires when the slider reaches the last slide (asynchronous)
+                </pre>
+                <hr />
+                <!-- END: SLIDER -->
+                
+                <!-- PORTFOLIO -->
+                <h2 id="portfolio">PORTFOLIO</h2>
+                
+                <p>
+                I think the portfolio system is the most interesting part of the theme. Users can filter the
+                elements ( thanks to the Quicksand plugin ) and the single item page loaded via ajax.
+                <br />
+                <br />
+                Below you can see the html structure of the portfolio. In <strong>&lt;ul id="portfolioFilter"></strong>, 
+                each of the anchor tags has a class. This class tells the script what you are filtering when clicking on.
+                All of the portfolio elements nested as a list item within the 
+                <br />
+                <strong>&lt;ul class="sortablePortfolio"></strong>.
+                Each of these has a <strong>'data-type'</strong> attribute. The value of this attribute must be consistent with one of the
+                anchors in <strong>&lt;ul id="portfolioFilter"></strong>. For examaple, if you have a filter anchor with a <strong>class="webdesing"</strong>,
+                and you want to add an element to the webdesign category, the data-type must be the same: webdesign.
+                <br />
+                <br />
+                All of the portfolio elements has a <strong>data-id</strong> attribute too. That tells the script how to ordering
+                elements. Do not create two elements with the same data-id.
+                <br />
+                <br />
+                There are an empty div with a class of "item_container". It can be found under the filter. This div will be the container
+                for the item details. When the user clicks the "more information" button the info will be loaded into this div, so please don't remove it
+                and leave it empty.
+                <br />
+                <br />
+                The size of the thumbnails is 520x520 in order to keep their look sharp on retina devices. Please don't worry about the bandwidth.
+                Bigger resolution doesn't have to mean bigger file size ( useful info <a href="http://blog.netvlies.nl/design-interactie/retina-revolution/" target="_blank">here</a> )! An optimized jpeg with 520x520 resolution is lighter than an avarage 260x260
+                image without optimization. If you don't know how to compress a jpeg file, feel free to visit this link:<br /><br />
+                
+                <a href="http://jpeg-optimizer.com/">Jpeg Optimizer</a><br /><br />
+                
+                I recommend you to create the 520x520 thumbnails, then optimize them with a 80 compression level. The "Resize Photo" function is unused 
+                in this case, so feel free to uncheck it.
+                
+                <br />
+                <br />
+                And finally here is the html sturcture of the portfolio section:
+
+                </p>
+                
+                <pre class="brush: xml;">
+                
+                &lt;div id="portfolio_wrapper">
+
+                     <!-- Filter -->
+                     &lt;div id="filter_wrapper">
+
+                          &lt;ul id="portfolioFilter">
+                              &lt;li class="active">&lt;a href="#" class="all">All projects&lt;/a>&lt;/li>
+                              &lt;li>&lt;a href="#" class="category1">[... Category name ...]&lt;/a>&lt;/li>
+                              &lt;li>&lt;a href="#" class="category2">[... Category name ...]&lt;/a>&lt;/li>
+                              &lt;li>&lt;a href="#" class="category3">[... Category name ...]&lt;/a>&lt;/li>
+                          &lt;/ul>
+
+                     &lt;/div>
+                     &lt;div class="clear">&lt;/div>
+
+                     <!-- An empty container for the single portfolio element, that will be loaded by ajax -->
+                     &lt;div class="item_container">&lt;/div>
+
+                     <!-- Portfolio images -->
+                     &lt;div id="portfolio_items">
+
+                          &lt;ul class="sortablePortfolio">
+
+                              <!-- 1st item -->
+                              &lt;li data-id="id-1" data-type="category1">
+                                  
+                                  <!-- Image -->
+                                  &lt;img src="[... path to the image ...]" alt="" />
+
+                                  <!-- Hidden details -->
+                                  &lt;div class="hidden">
+                                       
+                                       &lt;div class="hidden_content">
+
+                                            &lt;p>[... The title of your work ...]&lt;/p>
+
+                                            &lt;a href="[... Path to the item page e.g.: portfolio_item.htm ...]" class="information">&lt;/a>
+
+                                            &lt;a href="[... Link to your work ...]" class="link">&lt;/a>
+
+                                       &lt;/div>
+
+                                  &lt;/div>
+
+                              &lt;/li>
+                              
+                              <!-- 2nd item -->
+                              &lt;li data-id="id-2" data-type="category2">
+                                  
+                                  <!-- Image -->
+                                  &lt;img src="[... path to the image ...]" alt="" />
+
+                                  <!-- Hidden details -->
+                                  &lt;div class="hidden">
+                                       
+                                       &lt;div class="hidden_content">
+
+                                            &lt;p>[... The title of your work ...]&lt;/p>
+
+                                            &lt;a href="[... Path to the item page e.g.: portfolio_item.htm ...]" class="information">&lt;/a>
+
+                                            &lt;a href="[... Link to your work ...]" class="link">&lt;/a>
+
+                                       &lt;/div>
+
+                                  &lt;/div>
+
+                              &lt;/li>
+                              
+                              <!-- 3rd item -->
+                              &lt;li data-id="id-2" data-type="category2">
+                                  
+                                  <!-- Image -->
+                                  &lt;img src="[... path to the image ...]" alt="" />
+
+                                  <!-- Hidden details -->
+                                  &lt;div class="hidden">
+                                       
+                                       &lt;div class="hidden_content">
+
+                                            &lt;p>[... The title of your work ...]&lt;/p>
+
+                                            &lt;a href="[... Path to the item page e.g.: portfolio_item.htm ...]" class="information">&lt;/a>
+
+                                            &lt;a href="[... Link to your work ...]" class="link">&lt;/a>
+
+                                       &lt;/div>
+
+                                  &lt;/div>
+
+                              &lt;/li>
+
+                          &lt;/ul>
+                     
+                     &lt;/div>
+                
+                &lt;/div>
+                </pre><br /><br />
+                
+                <h3>How to change the tooltip texts?</h3>
+                
+                <p>
+                Open the custom.js, and at the bottom of the page you can find the following codes:
+                </p>
+
+                <pre class="brush: js;">
+                var information = "Click here for more information!";
+                var visit = "Visit the site!";
+                </pre><br /><br />
+                
+                <h3>The portfolio_item.htm</h3>
+                
+                <p>
+                Below are the hmtl structure of the portfolio_item.htm. This file loaded by the Jquery load()
+                function when the user clicks on the "info" circle. Don't open this file with your browser,
+                because it contains only the html markup of the portfolio element and it looks incorrect as a
+                standalone page ( it gets its styles from the &lt;head> of the main page ).<br /><br />
+                To create new files for the portfolio, I recommend you to copy
+                the portfolio_item.htm, and edit the copied file. That's the easiest way.<br /><br />
+                <strong>Note:</strong> If you modified the portfolio page, but can't see the results, you have
+                to clear the cache of your browser!
+                </p>
+                
+                <pre class="brush: xml;">
+                 <!---*** PORTFOLIO ITEM ***--->
+                 &lt;div class="item">
+                      
+                      <!-- Close button -->
+                      &lt;a href="#" class="close">&lt;/a>
+            
+                      <!-- PORFTOLIO DESCRIPTION -->
+                      &lt;div class="details">
+            
+                           &lt;div class="row">
+                                &lt;h3>[... Title ...]&lt;/h3>
+                                &lt;p>
+                                [... Your text ...]
+                                &lt;/p>
+                           &lt;/div>
+            
+                           &lt;div class="row">
+                                &lt;h3>[... Title ...]&lt;/h3>
+                                &lt;p>
+                                [... Your text ...]
+                                &lt;/p>
+                           &lt;/div>
+            
+                      &lt;div class="clear">&lt;/div>
+                      &lt;/div>
+                      <!-- END PORFTOLIO DESCRIPTION -->
+            
+                      <!-- SLIDER -->
+                      &lt;div class="slideshow_wrapper">
+            
+                           &lt;div class="slideshow">
+            
+                                &lt;ul class="slides">
+                                    &lt;li>
+                                        &lt;img src="[... Image url ...]" alt="" />
+                                        &lt;h3 class="flex-caption">[... Caption for the slide ...]&lt;/h3>
+                                    &lt;/li>
+                                    &lt;li>&lt;img src="[... Image url ...]" alt="" />&lt;/li>
+                                    &lt;li>&lt;img src="[... Image url ...]" alt="" />&lt;/li>
+                                    &lt;li>&lt;img src="[... Image url ...]" alt="" />&lt;/li>
+                                &lt;/ul>
+            
+                           &lt;/div>
+            
+                      &lt;/div>
+                      <!-- END SLIDER -->
+            
+                 &lt;div class="clear">&lt;/div>
+                 &lt;/div>
+                 <!---*** END PORTFOLIO ITEM ***--->
+                </pre>
+
+                <hr />
+                <!-- END: PORTFOLIO -->
+                
+                <!-- ABOUT -->
+                <h2 id="about">ABOUT</h2>
+                
+                <p>
+                Below you can view the detailed structure of the about section. To customize, just replace the texts,
+                and set the image src in the "about_image" div.
+                </p>
+                
+                <pre class="brush: xml;">
+                &lt;div id="about">
+                
+                     <!-- TITLE -->
+                     &lt;div class="title">
+                          &lt;h2>
+                              &lt;span>about me&lt;/span>
+                          &lt;/h2>
+                     &lt;/div>
+          
+                     <!-- ABOUT IMAGE -->
+                     &lt;div class="about_image">
+                          &lt;img src="[... Path to your profile picture ...]" alt="" />
+                     &lt;/div>
+          
+                     &lt;h3>HI! I'm Jane Doe, a freelancer web & user interface designer!&lt;/h3>
+          
+                     &lt;p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non elit eget mi venenatis luctus sed nec sapien.
+                     Phasellus a felis a nisl vulputate semper. Nunc tortor eros, hendrerit sed viverra in, facilisis quis mauris.
+                     &lt;/p>
+
+                &lt;/div>
+                </pre>
+
+                <hr />
+                <!-- END: ABOUT -->
+
+                <!-- SERVICES -->
+                <h2 id="services">SERVICES</h2>
+
+                <pre class="brush: xml;">
+
+                &lt;div id="services">
+     
+                     <!-- TITLE -->
+                     &lt;div class="title">
+                          &lt;h2>
+                              &lt;span>services&lt;/span>
+                          &lt;/h2>
+                     &lt;/div>
+          
+                     <!-- SERVICES INTRO -->
+                     &lt;div class="services_intro">
+                          &lt;p>
+                          [... Introduction text ...]
+                          &lt;/p>
+                     &lt;/div>
+          
+                     <!-- SERVICE BLOCKS -->
+                     &lt;div id="service_blocks">
+
+                          &lt;div class="service">
+                          [... Here goes the details of your service (more descriptive code below) ...]
+                          &lt;/div>
+                          
+                          &lt;div class="service">
+                          [... Here goes the details of your service (more descriptive code below) ...]
+                          &lt;/div>
+                          
+                          &lt;div class="service">
+                          [... Here goes the details of your service (more descriptive code below) ...]
+                          &lt;/div>
+
+                     &lt;/div>
+                &lt;/div>
+
+                </pre>
+
+                <p>
+                
+                You can find some useful icons in the images/services folder, but please be careful! In order to make the site beautiful on HD
+                screens all of the icons comes with the double size, so you need to resize them in the code. This is why I use the old width and
+                height attributes. In fact it is hard to find out the original size of the icons, so I make you life easier. Here are the list
+                of the &lt;img tags that you can use as an icon:<br /><br />
+                
+                <strong>android icon:</strong> &lt;img src="images/service_icons/android.png" width="46" height="54" /><br />
+                <strong>android icon ( white ):</strong> &lt;img src="images/service_icons/android_white.png" width="46" height="54" /><br />
+                <strong>brush icon:</strong> &lt;img src="images/service_icons/design.png" width="61" height="54" /><br />
+                <strong>brush icon ( white ):</strong> &lt;img src="images/service_icons/design_white.png" width="61" height="54" /><br />
+                <strong>drupal icon:</strong> &lt;img src="images/service_icons/drupal.png" width="57" height="63" /><br />
+                <strong>drupal icon ( white ):</strong> &lt;img src="images/service_icons/drupal_white.png" width="57" height="63" /><br />
+                <strong>ecommerce icon:</strong> &lt;img src="images/service_icons/ecommerce.png" width="60" height="46" /><br />
+                <strong>ecommerce icon ( white ):</strong> &lt;img src="images/service_icons/ecommerce_white.png" width="60" height="46" /><br />
+                <strong>email icon:</strong> &lt;img src="images/service_icons/email.png" width="56" height="36" /><br />
+                <strong>email icon ( white ):</strong> &lt;img src="images/service_icons/email_white.png" width="56" height="36" /><br />
+                <strong>calendar icon:</strong> &lt;img src="images/service_icons/event.png" width="56" height="56" /><br />
+                <strong>calendar icon ( white ):</strong> &lt;img src="images/service_icons/event_white.png" width="56" height="56" /><br />
+                <strong>camera icon:</strong> &lt;img src="images/service_icons/film.png" width="64" height="46" /><br />
+                <strong>camera icon ( white ):</strong> &lt;img src="images/service_icons/film_white.png" width="64" height="46" /><br />
+                <strong>ipad icon:</strong> &lt;img src="images/service_icons/ipad.png" width="52" height="58" /><br />
+                <strong>ipad icon ( white ):</strong> &lt;img src="images/service_icons/ipad_white.png" width="52" height="58" /><br />
+                <strong>iphone icon:</strong> &lt;img src="images/service_icons/iphone.png" width="36" height="58" /><br />
+                <strong>iphone icon ( white ):</strong> &lt;img src="images/service_icons/iphone_white.png" width="36" height="58" /><br />
+                <strong>parts icon:</strong> &lt;img src="images/service_icons/parts.png" width="44" height="52" /><br />
+                <strong>parts icon ( white ):</strong> &lt;img src="images/service_icons/parts_white.png" width="44" height="52" /><br />
+                <strong>photography icon:</strong> &lt;img src="images/service_icons/photography.png" width="60" height="52" /><br />
+                <strong>photography icon ( white ):</strong> &lt;img src="images/service_icons/photography_white.png" width="60" height="52" /><br />
+                <strong>printer icon:</strong> &lt;img src="images/service_icons/print.png" width="54" height="52" /><br />
+                <strong>printer icon ( white ):</strong> &lt;img src="images/service_icons/print_white.png" width="54" height="52" /><br />
+                <strong>tools icon:</strong> &lt;img src="images/service_icons/repair.png" width="66" height="63" /><br />
+                <strong>tools icon ( white ):</strong> &lt;img src="images/service_icons/repair_white.png" width="66" height="63" /><br />
+                <strong>revision icon:</strong> &lt;img src="images/service_icons/revision.png" width="45" height="62" /><br />
+                <strong>revision icon ( white ):</strong> &lt;img src="images/service_icons/revision_white.png" width="45" height="62" /><br />
+                <strong>seo icon:</strong> &lt;img src="images/service_icons/seo.png" width="51" height="53" /><br />
+                <strong>seo icon ( white ):</strong> &lt;img src="images/service_icons/seo_white.png" width="51" height="53" /><br />
+                <strong>dashboard icon:</strong> &lt;img src="images/service_icons/settings.png" width="60" height="50" /><br />
+                <strong>dashboard icon ( white ):</strong> &lt;img src="images/service_icons/settings_white.png" width="60" height="50" /><br />
+                <strong>line chart icon:</strong> &lt;img src="images/service_icons/statistics.png" width="59" height="51" /><br />
+                <strong>line chart icon ( white ):</strong> &lt;img src="images/service_icons/statistics_white.png" width="59" height="51" /><br />
+                <strong>pie chart icon:</strong> &lt;img src="images/service_icons/statistics2.png" width="58" height="58" /><br />
+                <strong>pie chart icon ( white ):</strong> &lt;img src="images/service_icons/statistics2_white.png" width="58" height="58" /><br />
+                <strong>telemarketing icon:</strong> &lt;img src="images/service_icons/telemarketing.png" width="62" height="42" /><br />
+                <strong>telemarketing icon ( white ):</strong> &lt;img src="images/service_icons/telemarketing_white.png" width="62" height="42" /><br />
+                <strong>clock icon:</strong> &lt;img src="images/service_icons/time.png" width="55" height="64" /><br />
+                <strong>clock icon ( white ):</strong> &lt;img src="images/service_icons/time_white.png" width="55" height="64" /><br />
+                <strong>clock2 icon:</strong> &lt;img src="images/service_icons/time2.png" width="53" height="56" /><br />
+                <strong>clock2 icon ( white ):</strong> &lt;img src="images/service_icons/time2_white.png" width="53" height="56" /><br />
+                <strong>monitor icon:</strong> &lt;img src="images/service_icons/webdesign.png" width="62" height="60" /><br />
+                <strong>monitor icon ( white ):</strong> &lt;img src="images/service_icons/webdesign_white.png" width="62" height="60" /><br />
+                <strong>wp icon:</strong> &lt;img src="images/service_icons/wp.png" width="58" height="56" /><br />
+                <strong>wp icon ( white ):</strong> &lt;img src="images/service_icons/wp_white.png" width="58" height="56" /><br />
+                <strong>pen icon:</strong> &lt;img src="images/service_icons/writing.png" width="60" height="57" /><br />
+                <strong>pen icon ( white ):</strong> &lt;img src="images/service_icons/writing_white.png" width="60" height="57" /><br /><br />
+                
+                And finally here is the html structure of a single service element:
+
+                </p>
+
+                <pre>
+                 &lt;div class="service">
+  
+                      &lt;!-- Icon ( big circle )-->
+                      &lt;div class="icon_container">
+                           &lt;div class="icon">
+                                [... Select an icon from the list above, or use your own ...]
+                           &lt;/div>
+                      &lt;/div>
+  
+                      &lt;!-- Service title -->
+                      &lt;h3>[... Title ...]&lt;/h3>
+                      
+                      &lt;!-- Short description -->
+                      &lt;p>
+                      [... Short description ...]
+                      &lt;/p>
+                      
+                      &lt;!-- Link to the full item -->
+                      &lt;a href="[... The path to the service item ( will be loaded by ajax )...]" class="read_more">Read more&lt;/a>
+  
+                 &lt;/div>
+                </pre>
+                <p style="text-align: center;">
+                   <img src="assets/images/service.png" alt="" />
+                </p>
+                <hr />
+                <!-- END: SERVICES -->
+                
+                <!-- CONTACT -->
+                <h2 id="contact">CONTACT</h2>
+                
+                <h3>1) General structure of the contact section</h3>
+
+                <pre class="brush: xml;">
+                     &lt;div id="contact">
+                     
+                         &lt;div class="title">
+                             &lt;h2>
+                                &lt;span>contact&lt;/span>
+                             &lt;/h2>
+                         &lt;/div>
+
+                         &lt;div id="contact_form">
+                         [... Here goes the contact form (detailed code below) ...]
+                         &lt;/div>
+
+                         &lt;div id="contact_info">
+                         [... Here goes the contact information (detailed code below) ...]
+                         &lt;/div>
+
+                     &lt;div class="clear">&lt;/div>
+                     &lt;/div>
+                </pre><br /><br />
+                
+                <h3>2) Contact form</h3>
+                
+                <p>
+                Important: Do not remove or modify the ids and name values of the form elements, because they are
+                necessary in the validation process. You may modify the value attributes, but if you add a new value to
+                the selected element, you have to modify the relevant variable in the custom.js too.
+                </p>
+                
+                <pre class="brush: xml;">
+                &lt;div id="contact_form">
+               
+                     <!-- Name -->
+                     &lt;input type="text" name="name" value="YOUR NAME *" id="form-name" />
+
+                     <!-- Email -->
+                     &lt;input type="text" name="mail" value="YOUR EMAIL ADDRESS *" id="form-mail" />
+               
+                     <!-- Message (textarea) -->
+                     &lt;textarea name='message' rows="5" cols="62" id="form-message">YOUR MESSAGE *&lt;/textarea>
+               
+                     <!-- Button -->
+                     &lt;button type="submit" id="button" >Go&lt;/button>
+
+                     <!--container for the results of mail.php (leave it empty)-->
+                     &lt;div id="result">&lt;/div>
+
+                &lt;/div>
+                </pre><br /><br />
+                
+                <strong>You can customize the validator with the following options in the custom.js</strong>
+                <pre class="brush: js;">
+                var name_value   = 'YOUR NAME *'; //must be the same as the value of the name field
+                var mail_value   = 'YOUR EMAIL ADDRESS *'; //must be the same as to the value of the email field
+                var message_value= 'YOUR MESSAGE *'; //must be the same as the content of the textarea
+
+                var missing_name = 'Please tell us your name!'; //error message, if the name field is empty
+                var missing_mail = 'Please let us know your email address!'; //error message, if the mail field is empty
+                var invalid_mail = 'Oh no! Invalid email address!'; //error message, if the user's email address is invalid
+                var missing_message = 'Please write us something beautiful!'; //error message, if the textarea is empty
+
+                var error_color   = '#990000'; //text color of the error messages
+                var default_color = '#333333'; //default text color of the contact form
+                </pre><br /><br />
+                
+                <h3>3) Contact info</h3>
+                
+                <p>
+                Below you can see the structure of the contact info &lt;div> with all of the available social icons. All of these icons are retina ready and looks sharp on HD screens.
+                You can change their tool tip texts easily, but please don't modify the ids of the selected social icons. If you would like to change a tool
+                tip, modify the value of the relevant variable at the bottom of the scripts/custom.js file.
+                </p>
+
+
+                <pre class="brush: xml;">
+                &lt;div id="contact_info">
+                
+                     &lt;p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                     Sed non elit eget mi venenatis luctus sed nec sapien.
+                     &lt;/p>
+                     
+                     &lt;ul>
+                         &lt;li>&lt;strong>Address:&lt;/strong>2000 Fashion Show Dr., Las Vegas, 89109 NV&lt;/li>
+                         &lt;li>&lt;strong>Phone:&lt;/strong> +01 - 000 - 0000&lt;/li>
+                         &lt;li>&lt;strong>Email:&lt;/strong>info@fakeaddress.com&lt;/li>
+                     &lt;/ul>
+                     
+                     &lt;ul class="social_icons">
+                         &lt;li>&lt;a href="" class="social_icon" id="fb">&lt;/a>&lt;/li>
+                         &lt;li>&lt;a href="" class="social_icon" id="rss">&lt;/a>&lt;/li>
+                         &lt;li>&lt;a href="" class="social_icon" id="dribbble">&lt;/a>&lt;/li>
+                         &lt;li>&lt;a href="" class="social_icon" id="skype">&lt;/a>&lt;/li>
+                         &lt;li>&lt;a href="" class="social_icon" id="deviantart">&lt;/a>&lt;/li>
+                         &lt;li>&lt;a href="" class="social_icon" id="google">&lt;/a>&lt;/li>
+                         &lt;li>&lt;a href="" class="social_icon" id="instagramm">&lt;/a>&lt;/li>
+                         &lt;li>&lt;a href="" class="social_icon" id="linked">&lt;/a>&lt;/li>
+                         &lt;li>&lt;a href="" class="social_icon" id="tumblr">&lt;/a>&lt;/li>
+                         &lt;li>&lt;a href="" class="social_icon" id="vimeo">&lt;/a>&lt;/li>
+                         &lt;li>&lt;a href="" class="social_icon" id="youtube">&lt;/a>&lt;/li>
+                         &lt;li>&lt;a href="" class="social_icon" id="twitter">&lt;/a>&lt;/li>
+                         &lt;li>&lt;a href="" class="social_icon" id="pinterest">&lt;/a>&lt;/li>
+                     &lt;/ul>
+      
+                &lt;/div>
+                </pre>
+                <p style="margin-top: 30px; margin-bottom: 0px;">
+                If you want to edit the tooltip labels, just open the custom.js, 
+                and you will find the relevant code at the bottom of the file.
+                </p>
+                <pre class="brush: js;">
+                 var information = "Click here for more information!";
+                 var visit = "Visit the site!"
+                 var fb_text = "Like this site!";
+                 var rss_text = "Subscribe to my rss feeds!";
+                 var twitter_text = "Follow me on twitter!";
+                 var skype_text = "Call me on skype!";
+                 var dribbble_text = "View my dribble profile!";
+                 var linked_in_text = "LinkedIn!"
+                 var vimeo_text = "View my Vimeo channel!";
+                 var youtube_text = "View my Youtube channel!";
+                 var pinterest_text = "Pin it!";
+                 var instagramm_text = "Follow me on Instagramm!";
+                 var google_text = "Find me on Google+!";
+                 var tumblr_text = "Read my blog on Tumblr!";
+                 var deviant_text = "Check out my DeviantArt profile!";
+                </pre><br /><br />
+                
+                <h3>4) Mail.php</h3>
+                
+                <p>
+                To activate your contact form open the mail.php, and modify the following variables:<br /><br />
+
+                <strong>$address</strong> - Change the value to your own email address. This is the most important thing in the mail.php<br />
+                <strong>$thank_you</strong> - "thank you" message, what will be shown on the contact page, after the message sent.<br />
+                <strong>$mail->Subject</strong> - subject of the messages from your site<br />
+                </p>
+                
+                <hr />
+                <!-- END: CONTACT -->
+                
+                <!-- NOTIFICATIONS -->
+                <h2 id="notifications">NOTIFICATION BOXES</h2>
+                
+                <pre class="brush: xml;">
+
+                     &lt;div class="error">
+                          &lt;p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non elit eget mi venenatis
+                          luctus sed nec sapien.
+                          &lt;/p>
+                     &lt;a href="">x&lt;/a>
+                     &lt;/div>
+
+                </pre>
+                <p style="text-align: center;">
+                <img src="assets/images/error.png" alt="" />
+                </p>
+                
+                <pre class="brush: xml;">
+
+                     &lt;div class="success">
+                          &lt;p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non elit eget mi venenatis
+                          luctus sed nec sapien.
+                          &lt;/p>
+                     &lt;a href="">x&lt;/a>
+                     &lt;/div>
+
+                </pre>
+                <p style="text-align: center;">
+                <img src="assets/images/success.png" alt="" />
+                </p>
+                
+                <pre class="brush: xml;">
+
+                     &lt;div class="alert">
+                          &lt;p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non elit eget mi venenatis
+                          luctus sed nec sapien.
+                          &lt;/p>
+                     &lt;a href="">x&lt;/a>
+                     &lt;/div>
+
+                </pre>
+                <p style="text-align: center;">
+                <img src="assets/images/alert.png" alt="" />
+                </p>
+                
+                <pre class="brush: xml;">
+
+                     &lt;div class="remember">
+                          &lt;p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non elit eget mi venenatis
+                          luctus sed nec sapien.
+                          &lt;/p>
+                     &lt;a href="">x&lt;/a>
+                     &lt;/div>
+
+                </pre>
+                <p style="text-align: center;">
+                <img src="assets/images/remember.png" alt="" />
+                </p>
+                
+                <hr />
+                <!-- END: NOTIFICATIONS -->
+                
+                <!-- CSS -->
+                <h2 id="styles">WORKING WITH THE STYLES</h2>
+                
+                <p>
+                The theme uses three css files and all of them can be found in the styles folder.
+                The stlye.css is the main css file, this contains all of the styles. The file is well commented, and comes with table of contents. 
+                If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file then scroll down until 
+                you find the relevant style that needs to be edited.
+                </p>
+                
+                <pre class="brush: css;">
+                /*===================================================================*/
+                /*       1. RESET CSS                                                */
+                /*===================================================================*/
+                
+                some css styles...
+
+                /*===================================================================*/
+                /*       2. GENERAL TYPOGRAPHY                                       */
+                /*===================================================================*/
+                
+                some css styles...
+
+                /*====================================================================*/
+                /*       5. SERVICES                                                  */
+                /*====================================================================*/
+                
+                some css styles...
+
+                etc...etc..
+
+                /*=====================================================================*/
+                /*       6. PORTFOLIO                                                  */
+                /*=====================================================================*/
+                
+                some css styles...
+
+                etc..etc..
+                </pre><br /><br />
+                
+                <p>
+                If you would like to edit the colors and the font families only, activate and open settings.css, where you can do that easily.
+                This file comes with a well commented structure ( like the stlye.css ) and it is separated into
+                sections by using the following structure:
+                </p>
+                
+                <pre class="brush: css;">
+                /*-- 1. Header / Homepage --*/
+                
+                some css styles...
+
+                /*-- 2. Portfolio --*/
+
+                some css styles...
+
+                .
+                .
+                .
+
+                /*-- 5. Contact --*/
+                
+                some css styles...
+                </pre><br /><br />
+                
+                <p>
+                The third css file is the ie8.css that is used by the Internet Explorer 8.
+                </p>
+
+                <hr />
+                <!-- END: CSS -->
+                
+                <!-- FONTS -->
+                <h2 id="fonts">WORKING WITH THE FONTS</h2>
+                
+                <p>
+                Near the system fonts the theme contains four families from the google font library: Brawler, Vollkorn, Quicksand and
+                Droid+Sans. You can add these types to any element in the document ( if you open the setting.css, you will see how it works ).
+                If you don't like the available fonts, feel free to add more families to your site. The styleswithcer on the <a href="http://magna-themes.com/demos/html/me/" target="_blank">demo page</a>
+                can help you to make the decision. If you don't know, how to use the Google Font Library, visit
+                <a href="http://www.google.com/webfonts#UsePlace:use" target="_blank">the official help page.</a>
+                </p>
+
+                <hr />
+                <!-- END: FONTS -->
+                
+                <!-- CREDITS -->
+                <h2 id="credits">CREDITS</h2>
+
+                <h3>Javascript:</h3>
+                <p>
+                <strong>JQuery by John Rising</strong> - <a href="http://jquery.com/" target="_blank">http://jquery.com/</a><br />
+                <strong>JQuery easing</strong> - <a href="http://gsgd.co.uk/sandbox/jquery/easing/" target="_blank">http://gsgd.co.uk/sandbox/jquery/easing/</a> <br />
+                <strong>FlexSlider by Muffin</strong> - <a href="http://flex.madebymufffin.com/" target="_blank">http://flex.madebymufffin.com/</a> <br />
+                <strong>tipTip by Drew Wilson</strong> - <a href="http://code.drewwilson.com/entry/tiptip-jquery-plugin" target="_blank">http://code.drewwilson.com/entry/tiptip-jquery-plugin</a> <br />
+                <strong>Quicksand by Razorjack</strong> - <a href="http://razorjack.net/quicksand/" target="_blank">http://razorjack.net/quicksand/</a> <br />
+                <strong>hoverIntent by Brian Cherne</strong> - <a href="http://cherne.net/brian/resources/jquery.hoverIntent.html" target="_blank">http://cherne.net/brian/resources/jquery.hoverIntent.html</a> <br /><br /><br />
+                </p>
+                
+                <h3>Photos:</h3>
+                <p>
+                <a href="http://www.flickr.com/photos/s-t-r-a-n-g-e/4843247140/in/photostream">http://www.flickr.com/photos/s-t-r-a-n-g-e/4843247140/in/photostream</a><br />
+                <a href="http://www.flickr.com/photos/s-t-r-a-n-g-e/2806781350/in/photostream">http://www.flickr.com/photos/s-t-r-a-n-g-e/2806781350/in/photostream</a><br />
+                <a href="http://www.flickr.com/photos/s-t-r-a-n-g-e/2938357216/in/photostream">http://www.flickr.com/photos/s-t-r-a-n-g-e/2938357216/in/photostream</a><br />
+                <a href="http://www.flickr.com/photos/s-t-r-a-n-g-e/2445505433/in/photostream">http://www.flickr.com/photos/s-t-r-a-n-g-e/2445505433/in/photostream</a><br />
+                <a href="http://www.flickr.com/photos/s-t-r-a-n-g-e/2233460650/in/photostream">http://www.flickr.com/photos/s-t-r-a-n-g-e/2233460650/in/photostream</a><br />
+                <a href="http://www.flickr.com/photos/pagail/5895954973/in/photostream">http://www.flickr.com/photos/pagail/5895954973/in/photostream</a><br />
+                <a href="http://www.flickr.com/photos/pagail/5356891494/in/photostream">http://www.flickr.com/photos/pagail/5356891494/in/photostream</a><br />
+                <a href="http://www.flickr.com/photos/orangeacid/5578012401/in/photostream">http://www.flickr.com/photos/orangeacid/5578012401/in/photostream</a><br />
+                <a href="http://www.flickr.com/photos/library_of_congress/">Lybrary of congress</a><br /><br /><br />
+                </p>
+
+                <h3>Icons</h3>
+                <p>
+                <strong>Iconsweets2 by YummyGumm</strong> - <a href="http://iconsweets2.com/" target="_blank">http://iconsweets2.com/</a><br /><br /><br />
+                </p>
+                <!-- END: CREDITS -->
+
+           </div>
+           <!-- End: Content -->
+
+      <div class="clear"></div>
+      </div>
+      <!-- END: WRAPPER -->
+
+<script type="text/javascript"> SyntaxHighlighter.all() </script>
+</body>
+
+</html>
