@@ -217,6 +217,7 @@ div#hidden_items ul li {float: left; margin-left: 50px; font-size: 16px; padding
 #slider {width: 100%; margin: 0; padding: 0;}
 #slider .slides > li {display: none;}
 #slider .slides img {max-width: 100%; display: block;}
+
 .flex-pauseplay span {text-transform: capitalize;}
 .slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
 html[xmlns] .slides {display: block;}
@@ -410,12 +411,52 @@ div#service_content a#close_service { position: absolute; top: 0px; right: 460px
      .two_fifth, .two_fifth_last       { width: 100%; margin-right: 0%; }
      .three_fifth, .three_fifth_last   { width: 100%; margin-right: 0%; }
      .four_fifth, .four_fifth_last     { width: 100%; margin-right: 0%; }
-     
+
+
+
+     /*!* navigation test *!*/
+     /*#nav-test {*/
+     /*     padding: 0;*/
+     /*     margin: 0;*/
+     /*     text-decoration: none;*/
+     /*     list-style: none;*/
+     /*     box-sizing: border-box;*/
+     /*     font-family: montserrat;*/
+     /*}*/
+
+     /*nav {*/
+     /*     background: #0082e6;*/
+     /*     height: 80px;*/
+     /*     width: 100px;*/
+     /*}*/
+
+     /*label.logo-test {*/
+     /*     color: white;*/
+     /*     font-size: 35px;*/
+     /*     line-height: 80px;*/
+     /*     padding: 0 100px;*/
+     /*     font-weight: bold;*/
+     /*}*/
+
+     /*nav ul {*/
+     /*     float: right;*/
+     /*     margin-right: 20px;*/
+     /*}*/
+
+     /*nav ul li {*/
+     /*     display: inline-block;*/
+     /*     line-height: 80px;*/
+     /*     margin: 0 5px;*/
+     /*}*/
+
+     /*nav ul li a {*/
+     /*     color: white;*/
+     /*}*/
      /* Navigation */
      div#navigation { float: none; left: auto; margin-bottom: 35px; }
      ul.menu { display: none; }
-     div#hidden_items { display: none; }
-     select.mobile_menu { display: block; width: 260px; margin: 0 130px; }
+     /*div#hidden_items { display: none; }*/
+     /*select.mobile_menu { display: block; width: 260px; margin: 0 130px; }*/
      div#hidden_menu select { margin: 0 auto; margin-top: 12px; }
      
      /* Slider */
@@ -464,6 +505,8 @@ div#service_content a#close_service { position: absolute; top: 0px; right: 460px
      
      /* Navigation */
      select.mobile_menu { margin: 0 80px; }
+     div#hidden_menu select { margin: 0 auto; margin-top: 12%; }
+
 
      /* Slider */
      #slider_wrapper { width: 420px; height: 175px; }
@@ -498,7 +541,19 @@ div#service_content a#close_service { position: absolute; top: 0px; right: 460px
      #intro { width: 300px; }
      
      /* Navigation */
+
+     div#navigation { float: none; left: auto; margin-bottom: 35px; }
+     ul.menu { display: none; }
+     div#hidden_items { display: none; }
+     select.mobile_menu { display: block; width: 260px; margin: 0 130px; }
+     div#hidden_menu select { margin: 0 auto; margin-top: 12%; }
+
+     /* Slider */
+     #slider_wrapper { width: 520px; height: 215px; margin-bottom: 30px; }
+     #slider:hover .flex-direction-nav li a { display: none; }
+
      select.mobile_menu { margin: 0 20px; }
+     ul.menu { border-top: 1px solid #CCCCCC; border-bottom: 1px solid #CCCCCC; float: left; position: relative; left: -50%;}
 
      /* Slider */
      #slider_wrapper { width: 300px; height: 125px; }
@@ -575,20 +630,20 @@ only screen and (min-device-pixel-ratio: 1.5) {
      .slideshow .flex-direction-nav li .prev { background: url('images/portfolio_prev@2X.png'); background-size: 50px 50px; }
      
      /* Social icons */
-     #contact_info ul.social_icons li a.social_icon { background-size: 47px 47px; }
-     #contact_info ul.social_icons li a#fb { background: url('images/social_icons/fb@2X.png'); }
-     #contact_info ul.social_icons li a#rss { background: url('images/social_icons/rss@2X.png'); }
-     #contact_info ul.social_icons li a#dribbble { background: url('images/social_icons/dribble@2X.png'); }
-     #contact_info ul.social_icons li a#skype { background: url('images/social_icons/skype@2X.png'); }
-     #contact_info ul.social_icons li a#deviantart { background: url('images/social_icons/deviant@2X.png'); }
-     #contact_info ul.social_icons li a#google { background: url('images/social_icons/google_plus@2X.png'); }
-     #contact_info ul.social_icons li a#instagramm { background: url('images/social_icons/instagramm@2X.png'); }
-     #contact_info ul.social_icons li a#linked { background: url('images/social_icons/linked@2X.png'); }
-     #contact_info ul.social_icons li a#tumblr { background: url('images/social_icons/tumblr@2X.png'); }
-     #contact_info ul.social_icons li a#vimeo { background: url('images/social_icons/vimeo@2X.png'); }
-     #contact_info ul.social_icons li a#youtube { background: url('images/social_icons/youtube@2X.png'); }
-     #contact_info ul.social_icons li a#twitter { background: url('images/social_icons/twitter@2X.png'); }
-     #contact_info ul.social_icons li a#pinterest { background: url('images/social_icons/pinterest@2X.png'); }
-     #contact_info ul.social_icons li a#soundcloud { background: url('images/social_icons/soundcloud@2X.png') no-repeat; }
+     /*#contact_info ul.social_icons li a.social_icon { background-size: 47px 47px; }*/
+     /*#contact_info ul.social_icons li a#fb { background: url('images/social_icons/fb@2X.png'); }*/
+     /*#contact_info ul.social_icons li a#rss { background: url('images/social_icons/rss@2X.png'); }*/
+     /*#contact_info ul.social_icons li a#dribbble { background: url('images/social_icons/dribble@2X.png'); }*/
+     /*#contact_info ul.social_icons li a#skype { background: url('images/social_icons/skype@2X.png'); }*/
+     /*#contact_info ul.social_icons li a#deviantart { background: url('images/social_icons/deviant@2X.png'); }*/
+     /*#contact_info ul.social_icons li a#google { background: url('images/social_icons/google_plus@2X.png'); }*/
+     /*#contact_info ul.social_icons li a#instagramm { background: url('images/social_icons/instagramm@2X.png'); }*/
+     /*#contact_info ul.social_icons li a#linked { background: url('images/social_icons/linked@2X.png'); }*/
+     /*#contact_info ul.social_icons li a#tumblr { background: url('images/social_icons/tumblr@2X.png'); }*/
+     /*#contact_info ul.social_icons li a#vimeo { background: url('images/social_icons/vimeo@2X.png'); }*/
+     /*#contact_info ul.social_icons li a#youtube { background: url('images/social_icons/youtube@2X.png'); }*/
+     /*#contact_info ul.social_icons li a#twitter { background: url('images/social_icons/twitter@2X.png'); }*/
+     /*#contact_info ul.social_icons li a#pinterest { background: url('images/social_icons/pinterest@2X.png'); }*/
+     /*#contact_info ul.social_icons li a#soundcloud { background: url('images/social_icons/soundcloud@2X.png') no-repeat; }*/
 
 }
